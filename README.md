@@ -1,6 +1,46 @@
 # Seizo-Noise
 
-A massive PCB for a speaker for my robotic arm with a microphone built into it and a ton of other GPIO ports.
+## What I made
+
+Seizo Noise is a PCB I designed for my robotic arm. The main reason I made it was that I wanted the arm to be able to talk and take in voice commands. I thought it would be really cool to say, “Hey, Seizo,” and have it respond with something like, “Yeah, what’s up?” I also want it to be able to play music.
+
+It’s a big PCB with USB-C and connections for a separate microphone module and amplifier module. It also has more connectors for sensors and other parts of my robotic arm. The goal is to bring these connections together and make the whole setup simpler.
+
+## What it does
+
+The board is designed to receive audio from my Raspberry Pi or laptop through the headphone output, using an AUX cable plugged directly into the PCB. It has a switch to choose the audio source and a knob to adjust the volume.
+
+It also connects to a microphone module, an amplifier module, and additional sensors. The amplifier connects to the speaker. Eventually, I want the microphone and software to let me talk to the robotic arm and have it respond. That voice interaction is still something I need to make work and test.
+
+## Why I made it
+
+I made it because constantly running motor commands and being on my phone to train the arm has gotten really annoying. I wanted to simplify that so I could eventually give it instructions by talking instead.
+
+I also wanted one board to bring the audio and sensor connections together instead of having everything spread out. Making the robot easier to use is the main reason, but having it talk back would also be way cooler, in my opinion.
+
+The AUX input also means it isn’t only for the arm. I want to connect my laptop and use the speaker setup for that too.
+
+## My work and what I learned
+
+I worked on the schematic, added components and connections, arranged the PCB, and routed it. I worked through a ton of errors, especially when ERC and DRC kept failing. That got really annoying at some points, but figuring out what the errors meant helped me learn.
+
+Week 1 was mostly about messing around and learning how KiCad works. This project was more about understanding specific design rules, footprints, trace widths, and filling areas of the PCB with ground copper.
+
+I learned that getting the schematic connected is only part of the work. I also had to think about where the components go, whether the footprints match, and whether the routing follows the rules. Working through those problems made me understand the whole process much better.
+
+## Parts and current progress
+
+I haven’t personally checked many of the individual parts yet. The connections I’m most familiar with are the headphone outputs on my laptop and Raspberry Pi. I chose an AUX input because those are simple to reuse, and it lets the board work with either device instead of being only for the robotic arm.
+
+The schematic and routing work are finished in KiCad. I still need to finish checking the parts and purchasing choices, get the PCB made, solder it, and test the actual hardware. Nothing has been manufactured or assembled yet, so I haven’t tested the finished board playing audio or recording through the microphone.
+
+## Help and sources
+
+I used tutorials, datasheets, and KiCad’s tools throughout the project. I also talked to friends at school for help understanding things like different modules, voltage requirements, capacitor selection, and how to make the design safer.
+
+ERC and DRC were especially helpful because they pointed out errors that I would have struggled to find myself. I used them a ton while working through the schematic and routing.
+
+I also used AI to help plan the project, research components, explain errors, and give me instructions. ChatGPT directly edited project files too, including changes to the layout, routing, footprints, and labels when I got stuck. I did hands-on schematic and routing work myself, but the final files also include those AI-made changes.
 
 ## Project screenshots
 
