@@ -76,7 +76,7 @@ Open `hardware/speakerpcb.kicad_pro` with its bundled libraries. The existing ER
 | Item | Current selection |
 | --- | --- |
 | Carrier PCB | Existing 100 x 80mm, two-layer Seizo Audio v1.0 |
-| Controller | Exact bare ESP32-S3-WROOM-1-N8R8, sourced separately from LCSC |
+| Controller | Exact bare ESP32-S3-WROOM-1-N8R8, sourced separately from Mouser |
 | 3.3V supply | Adafruit 4711 breakout wired to existing U2 pads; original CAD model remains Pololu |
 | Main power terminals | On Shore OSTTC022162, 5.08mm pitch, two pieces |
 | Playback | Pi/laptop AUX output, source selector and volume control |
@@ -89,16 +89,16 @@ Open `hardware/speakerpcb.kicad_pro` with its bundled libraries. The existing ER
 
 ## Bill of materials
 
-**Estimated selected-parts subtotal: $67.14.** This includes the new speaker, required ESP32, short-wiring pack and barrel adapter. The 30-line DigiKey portion is $55.11. The ESP32 is $5.04 from LCSC and the amplifier is $6.99 from ShillehTek.
+**Estimated selected-parts subtotal: $68.38.** This includes the new speaker, required ESP32, short-wiring pack and barrel adapter. The 30-line DigiKey portion is $55.11. The ESP32 is $6.28 from Mouser and the amplifier is $6.99 from ShillehTek.
 
-The owner's separate $4 PCB allowance brings this to $71.14 before tax, delivery, tariffs and remaining accessories. AUX/USB cables, enclosure, mounting and insulation costs are not included or assumed free. The owner's roughly $20 tax/shipping allowance is not a checkout quote. See [Budget.md](purchasing/Budget.md).
+The owner's separate $4 PCB allowance brings this to $72.38 before tax, delivery, tariffs and remaining accessories. AUX/USB cables, enclosure, mounting and insulation costs are not included or assumed free. The owner's roughly $20 tax/shipping allowance is not a checkout quote. See [Budget.md](purchasing/Budget.md).
 
-New and major component listings were reviewed on October 22, 2026. The ESP32 price is from an indexed LCSC listing and must be confirmed at checkout. Other small-part prices are retained from earlier catalog checks. The user's reported $83 cart has not been inspected; this is not a claim to have corrected that live cart.
+New and major component listings were reviewed on October 22, 2026. Mouser listed the exact ESP32-S3-WROOM-1-N8R8 in stock at $6.28 on October 22, 2026; confirm final stock, shipping and tariffs at checkout. Other small-part prices are retained from earlier catalog checks. The user's reported $83 cart has not been inspected; this is not a claim to have corrected that live cart.
 
 | References | Qty | Item / exact part | Unit USD | Line USD | Supplier |
 | --- | ---: | --- | ---: | ---: | --- |
 | External speaker | 1 | 4-ohm loudspeaker - Visaton FR 10 F - 20W (FR 10 F - 4 OHM) | 11.71 | 11.71 | [DigiKey](https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582) |
-| U1 | 1 | ESP32-S3-WROOM-1-N8R8 bare module (ESP32-S3-WROOM-1-N8R8) | 5.04 | 5.04 | [LCSC](https://www.lcsc.com/product-detail/C2913201.html) |
+| U1 | 1 | ESP32-S3-WROOM-1-N8R8 bare module (ESP32-S3-WROOM-1-N8R8) | 6.28 | 6.28 | [Mouser](https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N8R8) |
 | U2 | 1 | 3.3V regulator breakout - wired assembly (4711) | 3.95 | 3.95 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412) |
 | U3 | 1 | USB data ESD protector (USBLC6-2SC6) | 0.54 | 0.54 | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559) |
 | J1 | 1 | USB-C receptacle (USB4085-GF-A) | 0.91 | 0.91 | [DigiKey](https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733) |
@@ -130,7 +130,7 @@ New and major component listings were reviewed on October 22, 2026. The ESP32 pr
 | REGULATOR_AND_SHORT_POWER_WIRING | 1 | 22 AWG insulated wire - 1m ten-conductor ribbon (6180) | 4.25 | 4.25 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/6180/26690472) |
 | 12V_ADAPTER | 1 | Female 2.1mm DC barrel to screw-terminal adapter (368) | 2.00 | 2.00 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/368/5629434) |
 
-| **Selected-parts subtotal** | | | | **67.14** | |
+| **Selected-parts subtotal** | | | | **68.38** | |
 
 ## Import files
 

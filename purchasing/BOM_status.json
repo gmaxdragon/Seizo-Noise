@@ -3,11 +3,14 @@
   "priced_rows": 32,
   "digikey_rows": 30,
   "digikey_estimated_parts_usd": "55.11",
-  "selected_parts_usd": "67.14",
-  "other_suppliers": {"LCSC_ESP32_usd": "5.04", "ShillehTek_amplifier_usd": "6.99"},
+  "selected_parts_usd": "68.38",
+  "other_suppliers": {
+    "ShillehTek_amplifier_usd": "6.99",
+    "Mouser_ESP32_usd": "6.28"
+  },
   "wire_and_barrel_adapter_included_usd": "6.25",
   "owner_pcb_allowance_usd": "4.00",
-  "parts_plus_pcb_allowance_usd": "71.14",
+  "parts_plus_pcb_allowance_usd": "72.38",
   "actual_user_cart_usd": 83,
   "actual_user_cart_reviewed": false,
   "full_delivered_total_known": false,
@@ -15,10 +18,14 @@
   "esp32_in_digikey_csv": false,
   "esp32_in_full_bom": true,
   "regulator_is_drop_in": false,
-  "regulator_three_wire_mapping": {"U2.3": "Vin", "U2.4": "GND", "U2.5": "3V"},
+  "regulator_three_wire_mapping": {
+    "U2.3": "Vin",
+    "U2.4": "GND",
+    "U2.5": "3V"
+  },
   "pcb_copper_changed": false,
   "native_cad_checks_rerun": false,
   "physical_tests_completed": false,
   "live_import_verified": false,
-  "pricing_basis": "New/major listings reviewed; small-component prices retained from earlier checks; LCSC indexed price needs checkout confirmation"
+  "pricing_basis": "Mouser exact N8R8 module listed at $6.28 with stock seen on 2026-10-22; other previously selected prices retain their recorded basis; shipping and tariffs unquoted"
 }

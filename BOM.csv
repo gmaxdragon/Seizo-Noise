@@ -1,6 +1,6 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
 4-ohm loudspeaker - Visaton FR 10 F - 20W,1,DigiKey,$11.71,$11.71,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582
-ESP32-S3-WROOM-1-N8R8 bare module,1,LCSC,$5.04,$5.04,https://www.lcsc.com/product-detail/C2913201.html
+ESP32-S3-WROOM-1-N8R8 bare module,1,Mouser,$6.28,$6.28,https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N8R8
 3.3V regulator breakout - wired assembly,1,DigiKey,$3.95,$3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412
 USB data ESD protector,1,DigiKey,$0.54,$0.54,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559
 USB-C receptacle,1,DigiKey,$0.91,$0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733
