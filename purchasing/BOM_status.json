@@ -1,9 +1,22 @@
 {
-  "source": "BOM.csv as read immediately before this publication",
-  "priced_rows": 12,
-  "recorded_priced_subtotal_usd": "49.73",
+  "scope": "Initial AUX-audio and microphone build; external PCM5102 DAC deferred",
+  "source": "BOM.csv and purchasing/Selected_components.csv",
+  "priced_rows": 31,
+  "digikey_rows": 30,
+  "other_vendor": "ShillehTek amplifier",
+  "previous_selected_parts_usd": "85.64",
+  "selected_parts_usd": "72.98",
+  "savings_usd": "12.66",
+  "user_pcb_allowance_usd": "4.00",
+  "parts_plus_user_pcb_allowance_usd": "76.98",
+  "remaining_before_80_usd": "3.02",
+  "user_shipping_tax_allowance_usd": "20.00",
   "full_project_total_known": false,
-  "tier_2_limit_usd_from_user_page": "65.00",
-  "current_supplier_prices_rechecked": false,
-  "platform_bom_updated": false
+  "cabling_adapter_enclosure_and_mounting_costs_included": false,
+  "all_owned_accessories_confirmed": false,
+  "new_microphone_and_supply_listings_rechecked": "2026-10-22",
+  "other_prices": "Retained from previous catalog check; not refreshed in this budget revision",
+  "platform_bom_updated": false,
+  "platform_import_verified": false,
+  "pcb_design_changed": false
 }
