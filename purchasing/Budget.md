@@ -1,48 +1,62 @@
-# Initial build budget
+# Purchasing and import corrections
 
-The revised purchase list totals **$72.98 for 31 component rows**, compared with $85.64 previously. This is a component subtotal, not a complete delivered build price.
+## Active files
 
-| Change | Previous | Selected | Saving |
-| --- | ---: | ---: | ---: |
-| Microphone: ShillehTek INMP441 to Adafruit 3421 I2S breakout | $9.99 | $6.95 | $3.04 |
-| Adapter: Mean Well GST36U12-P1J to Tri-Mag L6R30-120 | $15.20 | $10.53 | $4.67 |
-| External Adafruit PCM5102 DAC 6250 | $4.95 | Deferred | $4.95 |
-| Total saving | | | $12.66 |
+- `../BOM.csv` and `Selected_components.csv`: the same 32-line priced component list for the wired-regulator assembly option.
+- `Seizo_Noise_DigiKey.csv`: 30 DigiKey product lines. The NEW 4-ohm speaker is the first row. There is no ESP32, Pololu 2830, Phoenix 1715721, or five-pin regulator socket in this cart file.
+- `Other_suppliers.csv`: the exact ESP32 module from LCSC and the amplifier from ShillehTek.
+- `BOM_engineering.csv` and `Selected_components_previous.csv`: earlier records, not current shopping lists.
 
-The first build uses the Pi or laptop's analog AUX output. Set SW3 to AUX. The amplifier, speaker and microphone remain in the purchase list. Standalone ESP32 digital audio playback through the DAC is deferred, not claimed to work without a DAC. No PCB traces, component values, fuses or protection devices were removed.
+## What changed
 
-## Budget boundary
+| Change | Previous USD | Revised USD |
+| --- | ---: | ---: |
+| Required ESP32-S3-WROOM-1-N8R8 | 6.32 at backordered DigiKey listing | 5.04 at LCSC, C2913201 |
+| Regulator module | 12.95 Pololu 2830 | 3.95 Adafruit 4711, wired to existing U2 pads |
+| Two power terminal blocks | 2.32 Phoenix | 1.16 On Shore OSTTC022162 |
+| Regulator socket | 0.45 | Not used with wired regulator |
+| Same Tri-Mag 12V supply | 10.53 | 10.33 refreshed listing |
+| Wire pack and barrel adapter | Previously excluded | 6.25 now included |
 
-| Budget line | USD |
+The lower-cost regulator is NOT a drop-in replacement. Follow [the assembly option](../docs/Low_cost_assembly.md), including the three-wire mapping and insulation. No PCB copper, schematic nets, fuse values, USB protection, or speaker power rating was changed.
+
+## Estimated price boundary
+
+| Line | USD |
 | --- | ---: |
-| Selected components | 72.98 |
-| Board allowance supplied by owner | 4.00 |
-| Parts plus board allowance | 76.98 |
-| Remaining before the owner's $80 pre-delivery target | 3.02 |
+| DigiKey component list, including new speaker, wire and barrel adapter | 55.11 |
+| LCSC ESP32 module | 5.04 |
+| ShillehTek amplifier | 6.99 |
+| Selected-parts subtotal | 67.14 |
+| Owner's separate PCB allowance | 4.00 |
+| Selected parts plus that allowance | 71.14 |
 
-The $4 board figure is the owner's allowance, not a new fabrication checkout quote. Required AUX/USB cables, the barrel-to-terminal connection, signal and speaker wiring, and the enclosure/mounting arrangement are not priced in that subtotal or confirmed already owned. They must be covered before calling the whole build under $80. No missing cost has been assigned zero. Optional extra sensors and the deferred DAC are not part of the first purchase.
+The subtotal before the newly included wire and adapter is $60.89. The previous $72.98 estimate did not include those two items. The user's reported $83 cart has not been inspected, so no claim is made that the subtotal reconciles that live cart.
 
-The owner set aside about $20 for shipping and tax. This is a spending allowance, not a carrier or tax quote. Pololu is a DigiKey Marketplace seller and may ship separately. The ESP32 and Phoenix terminals were listed on backorder in the prior check. A lower parts subtotal does not promise a delivery date or a fully funded $65 tier submission.
+Regulator, terminal, speaker, supply, microphone, amplifier, wire and barrel-adapter listings were reviewed for this update. The LCSC result lists $5.0436 per module, rounded here to $5.04; its indexed stock display is not a reserved quantity. Other small-part prices are carried forward from the previous catalog checks. Actual checkout prices control.
 
-## Files and imports
+Tax, tariff, delivery, an AUX cable, a USB data cable, the speaker enclosure, insulation and mounting hardware are not included or assumed free. The owner's approximately $20 tax/shipping allowance is not a quote and may not cover three suppliers plus PCB delivery. The $4 board allowance is owner-provided, not a fabrication checkout. This is not a complete delivered-cost guarantee or a $65 funding approval.
 
-- `../BOM.csv`: 31 priced initial-build rows with Quantity, Unit Price, Vendor, URL and Purpose columns. No shipping or order-total row is imported as a part.
-- `Selected_components.csv`: identical durable copy of the initial-build list.
-- `Seizo_Noise_DigiKey.csv`: 30 DigiKey lines, excluding the ShillehTek amplifier. Map DigiKey Part Number, Quantity and Customer Reference in Upload a List. Check exact matches, quantities, stock, shipping and taxes before ordering.
-- `Selected_components_previous.csv`: the previous $85.64 selection, retained for comparison rather than purchase.
-- `BOM_engineering.csv`: original wider engineering requirements. It is not a current priced checkout list.
+## ESP32 source
 
-The CSV values and arithmetic were checked locally. Half-Life's live importer and a real DigiKey cart have not been run by this update. In Half-Life, reopen Import from repo and verify the 31 rows total $72.98 before saving. Do not add this list on top of already imported duplicate rows. Root BOM.csv can be overwritten by platform sync; use the durable copy for recovery.
+Buy **one bare ESP32-S3-WROOM-1-N8R8**, LCSC **C2913201**:
+https://www.lcsc.com/product-detail/C2913201.html
 
-## Replacement microphone wiring
+Do not substitute a DevKit, ESP32-WROOM-32, N8-only module, or external-antenna 1U variant. Check actual stock, shipping and landed price before paying. The ESP32 remains required and included in the full BOM; it is removed only from the DigiKey order.
 
-The Adafruit 3421 module is a wired external replacement, not a direct plug-in match to J9. Solder the breakout's header as instructed by its manufacturer. Connect carrier J9 pin 1 to 3V, pin 2 to GND, pin 3 to BCLK, pin 4 to LRCLK, pin 5 to DOUT, and pin 6 to SEL (left channel). Configure firmware for SPH0645LM4H I2S timing and data format; the manufacturer's guide specifies a 2-4 MHz bit clock. This connection and firmware still need physical verification. The saved carrier's INMP441 label is historical; do not use it to infer breakout pin order.
+## DigiKey import
 
-## Sources for the changes
+Use Upload a List with `Seizo_Noise_DigiKey.csv`. Map **DigiKey Part Number**, **Quantity**, and **Customer Reference** to their matching fields.
 
-- [Adafruit 3421 DigiKey listing](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114): $6.95, part 1528-1908-ND, listing checked October 22, 2026.
-- [Adafruit microphone pinouts](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/pinouts): supply, I2S signals and channel selection.
-- [Tri-Mag L6R30-120 DigiKey listing](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642): $10.53, part 364-1279-ND, 12V 2.5A, positive-center 5.5x2.1mm output, listing checked October 22, 2026.
-- [Tri-Mag manufacturer data](https://www.tri-mag.com/wp-content/uploads/2021/05/L6R24-L6R30_Series_2021-02.pdf).
+Use an empty project cart or replace the old affected lines first. Importing a new list does not prove that an existing cart's obsolete items were removed. In an existing cart, remove the old ESP32, Pololu regulator, Phoenix terminals and regulator socket before adding their replacements. Do not import the complete list on top of itself.
 
-Other prices are carried forward from the previous selection rather than represented as newly checked live prices. No purchase or funding submission was made.
+The first row must be:
+`2056-FR10F-4OHM-ND,1,SPEAKER_4OHM_20W`
+
+That is the actual Visaton loudspeaker. The separate `ST-HLHQRTMBQEIH` amplifier is not a speaker and is ordered from ShillehTek. If the speaker row fails to match, search DigiKey for the exact part number above and add quantity 1 manually. The earlier CSV already contained this SKU, so the reason for its absence from the user's cart has not been established.
+
+## Half-Life import
+
+Reopen Import from repo and check for 32 parts with readable prices and purposes. The expected component subtotal is $67.14, before any platform tax/shipping fields. Do not create duplicate entries. Root `BOM.csv` can be overwritten by platform sync; `Selected_components.csv` preserves the corrected data.
+
+These files were validated for CSV syntax, row counts, unique DigiKey SKUs, speaker inclusion, ESP32 sourcing and arithmetic. Neither a live DigiKey cart nor the authenticated Half-Life importer was operated in this update.

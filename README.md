@@ -48,7 +48,7 @@ I also used AI to help plan the project, research components, explain errors, an
 
 ![3D PCB view supplied by the project owner](images/pcb-3d.png)
 
-These are the owner's CAD screenshots, not photos of assembled hardware. The layout screenshot includes an earlier review-stage label; the editable design files below are Seizo Audio v1.0.
+These are CAD screenshots, not photographs of assembled hardware. They show the original Seizo Audio v1.0 carrier. The lower-cost purchase option below uses a wired regulator rather than the pictured Pololu module.
 
 ## Design files
 
@@ -60,79 +60,91 @@ These are the owner's CAD screenshots, not photos of assembled hardware. The lay
 | Board rules | [speakerpcb.kicad_dru](hardware/speakerpcb.kicad_dru) |
 | Included footprints | [Seizo_Audio.pretty](hardware/Seizo_Audio.pretty) |
 | Included symbols | [Seizo_Audio.kicad_sym](hardware/Seizo_Audio.kicad_sym) |
-| Assembly instructions | [Assembly.md](docs/Assembly.md) |
-| Connector pin maps | [Connections.md](docs/Connections.md) |
+| Original assembly instructions | [Assembly.md](docs/Assembly.md) |
+| Original connector pin maps | [Connections.md](docs/Connections.md) |
+| Lower-cost assembly option | [Low_cost_assembly.md](docs/Low_cost_assembly.md) |
 | Native schematic check | [ERC.rpt](validation/ERC.rpt) |
 | Native board and schematic-parity check | [DRC.rpt](validation/DRC.rpt) |
 | Gerbers and drills | [Seizo_Audio_Gerbers.zip](fabrication/Seizo_Audio_Gerbers.zip) |
 
-Download the complete repository and open `hardware/speakerpcb.kicad_pro`. Keep the local symbol, footprint, and model folders with it. The native ERC and DRC reports were rerun during the CAD publication, including copper refill and schematic-to-PCB comparison. These CAD checks do not replace assembly inspection or physical power/audio testing. The purchasing revision below did not change the PCB or schematic.
+Open `hardware/speakerpcb.kicad_pro` with its bundled libraries. The existing ERC/DRC reports apply to the published carrier CAD. No PCB copper or schematic nets were changed in this purchasing update, and those reports do not validate the new wired regulator assembly or physical operation.
 
-## Hardware reference
+## Current hardware and purchase scope
 
-| Item | Saved design and initial purchase plan |
+**The $3.95 Adafruit 4711 regulator is NOT a drop-in replacement for the original Pololu footprint.** Leave the Pololu and its socket uninstalled. Use three short insulated wires: carrier U2 pad 3 to Vin, pad 4 to GND, and pad 5 to 3V on Adafruit 4711. Follow the [assembly option](docs/Low_cost_assembly.md) before assembling or powering. Never connect this regulator to 12V.
+
+| Item | Current selection |
 | --- | --- |
-| Carrier PCB | 100 x 80 mm, two layers, 1.6 mm FR-4, nominal 1 oz copper |
-| Controller | ESP32-S3-WROOM-1-N8R8 |
-| 3.3 V supply | Pololu D24V10F3, product 2830 |
-| Playback for first build | Pi/laptop analog AUX output through the source selector and volume control |
-| Microphone | External Adafruit 3421 SPH0645LM4H, wired to J9 by signal labels; replaces the earlier INMP441 selection |
-| DAC | Adafruit PCM5102 6250 is deferred; J6/J7 remain for later addition |
-| Amplifier and speaker | External TPA3118 module at J4/J5; Visaton FR 10 F 4-ohm speaker at amplifier outputs |
-| Amplifier supply | Tri-Mag L6R30-120 enclosed 12V 2.5A adapter; barrel connection to J3 still required |
-| Other interfaces | Ultrasonic connector, 3.3V UART and 3.3V I2C; extra sensors are not in the first purchase |
-| Build status | CAD files exist; no manufactured, assembled or powered board is documented here |
+| Carrier PCB | Existing 100 x 80mm, two-layer Seizo Audio v1.0 |
+| Controller | Exact bare ESP32-S3-WROOM-1-N8R8, sourced separately from LCSC |
+| 3.3V supply | Adafruit 4711 breakout wired to existing U2 pads; original CAD model remains Pololu |
+| Main power terminals | On Shore OSTTC022162, 5.08mm pitch, two pieces |
+| Playback | Pi/laptop AUX output, source selector and volume control |
+| Microphone | Adafruit 3421 SPH0645LM4H, wired to J9 by signal |
+| Amplifier | ShillehTek TPA3118 mono module |
+| Speaker | One NEW Visaton FR 10 F - 4 OHM, 20W rated |
+| Amplifier supply | Tri-Mag L6R30-120, 12V 2.5A, plus barrel adapter |
+| Deferred equipment | PCM5102 DAC and additional sensors, as in the previous initial-build plan |
+| Physical status | Not assembled, powered or audio-tested |
 
 ## Bill of materials
 
-**Initial-build component subtotal: $72.98.** The list contains 31 priced purchasing lines, with 30 available through DigiKey listings and the amplifier through ShillehTek. The external DAC is deferred so playback initially uses the Pi/laptop AUX output. No carrier protection parts were cut.
+**Estimated selected-parts subtotal: $67.14.** This includes the new speaker, required ESP32, short-wiring pack and barrel adapter. The 30-line DigiKey portion is $55.11. The ESP32 is $5.04 from LCSC and the amplifier is $6.99 from ShillehTek.
 
-The table is a component purchasing plan, not a complete delivered-project total. The owner's $4 PCB allowance brings parts plus that allowance to $76.98, leaving $3.02 before the $80 target. Required cabling, the barrel adapter, enclosure/mounting costs, shipping and tax are not included or assumed free. See [budget scope](purchasing/Budget.md).
+The owner's separate $4 PCB allowance brings this to $71.14 before tax, delivery, tariffs and remaining accessories. AUX/USB cables, enclosure, mounting and insulation costs are not included or assumed free. The owner's roughly $20 tax/shipping allowance is not a checkout quote. See [Budget.md](purchasing/Budget.md).
 
-Microphone and adapter listing prices were rechecked on October 22, 2026. Other prices are retained from the previous catalog check. Actual cart prices and availability control; the ESP32 and Phoenix terminals previously showed backorder, and the Pololu module can ship separately.
+New and major component listings were reviewed on October 22, 2026. The ESP32 price is from an indexed LCSC listing and must be confirmed at checkout. Other small-part prices are retained from earlier catalog checks. The user's reported $83 cart has not been inspected; this is not a claim to have corrected that live cart.
 
-| References | Qty | Part / function | Unit USD | Line USD | Vendor |
+| References | Qty | Item / exact part | Unit USD | Line USD | Supplier |
 | --- | ---: | --- | ---: | ---: | --- |
-| U1 | 1 | ESP32-S3-WROOM-1-N8R8 | 6.32 | 6.32 | [DigiKey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8R8/15295891) |
-| U2 | 1 | Pololu D24V10F3, product 2830 | 12.95 | 12.95 | [DigiKey Marketplace](https://www.digikey.com/en/products/detail/pololu/2830/10451161) |
-| U3 | 1 | USBLC6-2SC6 ESD protection | 0.54 | 0.54 | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559) |
-| J1 | 1 | GCT USB4085-GF-A USB-C | 0.91 | 0.91 | [DigiKey](https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733) |
-| J8 | 1 | SJ1-3533NG AUX input | 1.69 | 1.69 | [DigiKey](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701) |
-| J3, J4 | 2 | Phoenix 1715721 power terminals | 1.16 | 2.32 | [DigiKey](https://www.digikey.com/en/products/detail/phoenix-contact/1715721/260631) |
-| F1 | 1 | 1206L050/15YR USB resettable fuse | 0.68 | 0.68 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168) |
-| F2 | 1 | Keystone 3568 MINI fuse holder | 1.31 | 1.31 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306) |
-| F2 insert | 1 | 0297002.WXNV 2A MINI fuse | 0.39 | 0.39 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900) |
-| D1 | 1 | Taiwan Semiconductor 1N5822 diode | 0.71 | 0.71 | [DigiKey](https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597) |
-| RV1 | 1 | PTV09A-2020F-A103 10k volume control | 1.23 | 1.23 | [DigiKey](https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098) |
-| SW3 | 1 | OS102011MS2QN1 audio selector | 0.80 | 0.80 | [DigiKey](https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602) |
-| SW1, SW2 | 2 | B3F-1000 RESET/BOOT buttons | 0.35 | 0.70 | [DigiKey](https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150) |
-| C1, C5 | 2 | CL31A106KAHNFNE 10uF 1206 | 0.25 | 0.50 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696) |
-| C2, C7, C9, C10 | 4 | CL31B104KBCNNNC 100nF 1206 | 0.14 | 0.56 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675) |
-| C3, C4 | 2 | CL31B105KBHSNNE 1uF 1206 | 0.24 | 0.48 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179) |
-| C6 | 1 | EEU-FR1E471 470uF 25V | 1.06 | 1.06 | [DigiKey](https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553) |
-| C8 | 1 | CL31B225KAHNNNE 2.2uF 1206 | 0.21 | 0.21 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730) |
-| R1, R2, R13, R17 | 4 | RC1206FR-0710KL 10k | 0.11 | 0.44 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430) |
-| R3, R4 | 2 | RC1206FR-075K1L 5.1k | 0.10 | 0.20 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947) |
-| R5, R6 | 2 | RC1206FR-0722RL 22 ohm | 0.11 | 0.22 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687) |
-| R9, R10, R11, R12, R18, R19 | 6 | RC1206FR-074K7L 4.7k | 0.10 | 0.60 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887) |
-| R14 | 1 | RC1206FR-0718KL 18k | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539) |
-| R15 | 1 | RC1206FR-07100KL 100k | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492) |
-| R16 | 1 | RC1206FR-076K8L 6.8k | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028) |
-| J5, J6, J7, J9, J10, J11, J12 | 1 strip | PRPC040SAAN-RC, cut into seven headers | 1.23 | 1.23 | [DigiKey](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214) |
-| U2 socket | 1 | PPPC051LFBN-RC five-pin socket | 0.45 | 0.45 | [DigiKey](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPPC051LFBN-RC/810177) |
-| External J9 | 1 | Adafruit 3421 I2S microphone breakout | 6.95 | 6.95 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114) |
-| External J4/J5 | 1 | ShillehTek TPA3118 mono amplifier | 6.99 | 6.99 | [ShillehTek](https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w) |
-| External speaker | 1 | Visaton FR 10 F, 4 ohm | 11.71 | 11.71 | [DigiKey](https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582) |
-| External supply | 1 | Tri-Mag L6R30-120, 12V 2.5A | 10.53 | 10.53 | [DigiKey](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642) |
-| **Selected component subtotal** | | | | **72.98** | |
+| External speaker | 1 | 4-ohm loudspeaker - Visaton FR 10 F - 20W (FR 10 F - 4 OHM) | 11.71 | 11.71 | [DigiKey](https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582) |
+| U1 | 1 | ESP32-S3-WROOM-1-N8R8 bare module (ESP32-S3-WROOM-1-N8R8) | 5.04 | 5.04 | [LCSC](https://www.lcsc.com/product-detail/C2913201.html) |
+| U2 | 1 | 3.3V regulator breakout - wired assembly (4711) | 3.95 | 3.95 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412) |
+| U3 | 1 | USB data ESD protector (USBLC6-2SC6) | 0.54 | 0.54 | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559) |
+| J1 | 1 | USB-C receptacle (USB4085-GF-A) | 0.91 | 0.91 | [DigiKey](https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733) |
+| J8 | 1 | Stereo AUX input jack (SJ1-3533NG) | 1.69 | 1.69 | [DigiKey](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701) |
+| J3 J4 | 2 | Two-position power terminal block (OSTTC022162) | 0.58 | 1.16 | [DigiKey](https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558) |
+| F1 | 1 | USB resettable fuse (1206L050/15YR) | 0.68 | 0.68 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168) |
+| F2 | 1 | MINI blade fuse holder (3568) | 1.31 | 1.31 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306) |
+| F2 insert | 1 | 2A MINI blade fuse (0297002.WXNV) | 0.39 | 0.39 | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900) |
+| D1 | 1 | Reverse-polarity diode (1N5822) | 0.71 | 0.71 | [DigiKey](https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597) |
+| RV1 | 1 | Volume potentiometer (PTV09A-2020F-A103) | 1.23 | 1.23 | [DigiKey](https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098) |
+| SW3 | 1 | Audio source selector (OS102011MS2QN1) | 0.80 | 0.80 | [DigiKey](https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602) |
+| SW1 SW2 | 2 | RESET and BOOT buttons (B3F-1000) | 0.35 | 0.70 | [DigiKey](https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150) |
+| C1 C5 | 2 | 10uF ceramic capacitor (CL31A106KAHNFNE) | 0.25 | 0.50 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696) |
+| C2 C7 C9 C10 | 4 | 100nF ceramic capacitor (CL31B104KBCNNNC) | 0.14 | 0.56 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675) |
+| C3 C4 | 2 | 1uF ceramic capacitor (CL31B105KBHSNNE) | 0.24 | 0.48 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179) |
+| C6 | 1 | 470uF electrolytic capacitor (EEU-FR1E471) | 1.06 | 1.06 | [DigiKey](https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553) |
+| C8 | 1 | 2.2uF audio coupling capacitor (CL31B225KAHNNNE) | 0.21 | 0.21 | [DigiKey](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730) |
+| R1 R2 R13 R17 | 4 | 10k resistor (RC1206FR-0710KL) | 0.11 | 0.44 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430) |
+| R3 R4 | 2 | 5.1k resistor (RC1206FR-075K1L) | 0.10 | 0.20 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947) |
+| R5 R6 | 2 | 22 ohm resistor (RC1206FR-0722RL) | 0.11 | 0.22 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687) |
+| R9 R10 R11 R12 R18 R19 | 6 | 4.7k resistor (RC1206FR-074K7L) | 0.10 | 0.60 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887) |
+| R14 | 1 | 18k resistor (RC1206FR-0718KL) | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539) |
+| R15 | 1 | 100k resistor (RC1206FR-07100KL) | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492) |
+| R16 | 1 | 6.8k resistor (RC1206FR-076K8L) | 0.10 | 0.10 | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028) |
+| J5 J6 J7 J9 J10 J11 J12 | 1 | 40-pin breakaway header strip (PRPC040SAAN-RC) | 1.23 | 1.23 | [DigiKey](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214) |
+| External J9 | 1 | I2S microphone breakout (3421) | 6.95 | 6.95 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114) |
+| External J4 J5 | 1 | Mono amplifier module (ST-HLHQRTMBQEIH) | 6.99 | 6.99 | [ShillehTek](https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w) |
+| External supply | 1 | 12V amplifier power supply (L6R30-120) | 10.33 | 10.33 | [DigiKey](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642) |
+| REGULATOR_AND_SHORT_POWER_WIRING | 1 | 22 AWG insulated wire - 1m ten-conductor ribbon (6180) | 4.25 | 4.25 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/6180/26690472) |
+| 12V_ADAPTER | 1 | Female 2.1mm DC barrel to screw-terminal adapter (368) | 2.00 | 2.00 | [DigiKey](https://www.digikey.com/en/products/detail/adafruit-industries-llc/368/5629434) |
 
-[Half-Life import CSV](BOM.csv) uses explicit Quantity, Unit Price, Vendor, URL and Purpose columns. [DigiKey upload CSV](purchasing/Seizo_Noise_DigiKey.csv) contains 30 DigiKey lines; the amplifier is a separate purchase. These files have been checked for row counts and arithmetic, not imported into a live checkout by this update. Check the Half-Life import preview before saving; do not duplicate an existing import.
+| **Selected-parts subtotal** | | | | **67.14** | |
+
+## Import files
+
+[Half-Life BOM](BOM.csv) and [durable component list](purchasing/Selected_components.csv) contain the same 32 priced rows with purposes. [DigiKey CSV](purchasing/Seizo_Noise_DigiKey.csv) has 30 rows, with the speaker first and no ESP32. [Other suppliers](purchasing/Other_suppliers.csv) lists the ESP32 and amplifier separately.
+
+The speaker's exact DigiKey SKU is **2056-FR10F-4OHM-ND**. Its cart reference is `SPEAKER_4OHM_20W`. An amplifier module is not the loudspeaker. The previous file already included the speaker SKU; the reason it was missing from the user's cart was not established.
+
+Use an empty project cart or remove obsolete/duplicate lines before importing. Reimporting does not establish that existing cart items were removed. Verify 30 DigiKey rows, including one speaker, before checkout. In Half-Life verify 32 parts and the prices before saving; a platform sync can overwrite root `BOM.csv`. No live cart or authenticated Half-Life import was run by this update.
 
 ## Sources and records
 
 - [Original development journal](JOURNAL.md), synced by Half-Life. Entries and hours were not changed.
-- [Current component selection](purchasing/Selected_components.csv) and [budget scope](purchasing/Budget.md).
-- [Earlier engineering requirements](purchasing/BOM_engineering.csv), retained as a wider requirements record, not the active purchase list.
-- [Previous priced selection](purchasing/Selected_components_previous.csv), retained for comparison, not purchase.
-- [CAD import provenance](docs/import_provenance.json) and native checks under `validation/`.
-- AI assistance was used to format the parts lists, research replacement options and update technical wiring notes. The six owner-approved narrative sections above remain unchanged. This does not claim unaided research or completed physical tests.
+- [Current component selection](purchasing/Selected_components.csv), [budget](purchasing/Budget.md), and [status](purchasing/BOM_status.json).
+- [Earlier engineering requirements](purchasing/BOM_engineering.csv) and [previous selection](purchasing/Selected_components_previous.csv) are historical records, not current shopping lists.
+- [Adafruit regulator](https://www.adafruit.com/product/4711), [terminal manufacturer drawing](https://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf), and supplier links in the BOM support the new selections.
+- [CAD import provenance](docs/import_provenance.json) and existing native checks under `validation/`.
+- AI assistance was used for parts research, CSV formatting and technical assembly notes. The six owner-approved narrative sections above remain unchanged. No unaided research or physical testing is claimed.
