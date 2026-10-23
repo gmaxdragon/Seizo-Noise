@@ -1,0 +1,6 @@
+{
+  "source_archive": "Seizo_Audio_Design_v1.zip",
+  "source_archive_sha256": "b54f48b535cc93fee06d2613a11d75a447cf57325ed7676f38ff2294b40163ae",
+  "transport_notes": "Document UUIDs normalized consistently; cached ground fills removed for native refill. No component positions, pad assignments, track geometries, or schematic connections changed.",
+  "uuid_count": 2389
+}

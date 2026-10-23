@@ -1,0 +1,176 @@
+(footprint "U2_Pololu_D24V10F3_Socket"
+	(version 20260206)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "00000000-0000-4000-8000-0000000003b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Pololu D24V10F3 3.3V"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "00000000-0000-4000-8000-0000000003b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.pololu.com/product/2830"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-4000-8000-0000000003ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Socket for 3.3V Pololu D24V10F3 preassembled buck module. Component side upward; PG/SHDN unused. Keep underside insulated with a header/socket."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-4000-8000-0000000003bb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "Recom_DCDC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "00000000-0000-4000-8000-0000000003bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly note" "REVIEW HOLD: R-78B3.3-2.0 requires >=4.75V at VIN. USB cable and F1 drops may violate this. Not approved for arbitrary USB bus power."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-4000-8000-0000000003bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "*Pololu_D24V10F3*")
+	(property "MPN" "2830 D24V10F3; NOT R-78B3.3-2.0"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.39 -1.39)
+		(end 11.55 16.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "00000000-0000-4000-8000-0000000003be")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 11.43 16.53)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "00000000-0000-4000-8000-0000000003bf")
+	)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 11.93 17.03)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "00000000-0000-4000-8000-0000000003c0")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "4" thru_hole oval
+		(at 7.62 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(zone_connect 1)
+		(thermal_bridge_width 0.8)
+		(thermal_gap 0.3)
+	)
+	(pad "5" thru_hole oval
+		(at 10.16 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(model "${KIPRJMOD}/models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+	(model "${KIPRJMOD}/models/Seizo_Mechanical/Pololu_D24V10F3.step"
+		(offset
+			(xyz 11.43 1.27 4.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)

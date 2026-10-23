@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "filename": "speakerpcb.kicad_pro",
+    "version": 3
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.15,
+        "min_track_width": 0.2,
+        "min_via_diameter": 0.6,
+        "min_through_hole_diameter": 0.3,
+        "min_via_annular_width": 0.15,
+        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.2,
+        "min_copper_edge_clearance": 0.3,
+        "min_silk_clearance": 0.15,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.12
+      },
+      "drc_exclusions": [],
+      "track_widths": [
+        0.2,
+        0.25,
+        0.4,
+        0.6,
+        1.0,
+        1.5
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        }
+      ],
+      "rule_severities": {
+        "missing_courtyard": "warning",
+        "footprint_type_mismatch": "error",
+        "footprint_filters_mismatch": "warning",
+        "track_not_centered_on_via": "warning"
+      }
+    }
+  },
+  "net_settings": {
+    "meta": {
+      "version": 3
+    },
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.2,
+        "track_width": 0.25,
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
+        "diff_pair_width": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "bus_width": 12,
+        "wire_width": 6,
+        "line_style": 0
+      }
+    ],
+    "netclass_assignments": {},
+    "netclass_patterns": []
+  },
+  "text_variables": {},
+  "erc": {
+    "rule_severities": {
+      "footprint_filter": "warning"
+    }
+  }
+}

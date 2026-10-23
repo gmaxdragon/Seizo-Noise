@@ -1,0 +1,110 @@
+[
+  {
+    "path": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+    "bytes": 43450
+  },
+  {
+    "path": "Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+    "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+    "bytes": 40414
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+    "bytes": 75616
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+    "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+    "bytes": 110633
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+    "bytes": 145684
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3",
+    "bytes": 180757
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+    "sha256": "d6113af109a14a67c50dcefd1cfc7b43b59b59afa85d808b2319e2452da91318",
+    "bytes": 215953
+  },
+  {
+    "path": "Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.step",
+    "sha256": "82235f7275d07f720e3c050f781397f4bef47fdc7e15dd507d68ccba861f1a35",
+    "bytes": 804970
+  },
+  {
+    "path": "Button_Switch_THT.3dshapes/SW_PUSH_6mm.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step",
+    "sha256": "eb2ba2737299cc764145d8d10ea26d992f819ff5522fb3c0dfa2605b8221f9d6",
+    "bytes": 179934
+  },
+  {
+    "path": "TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "sha256": "2684469b03d2dd46f26862eb86eb283215344c311dd485db877e7139b5381497",
+    "bytes": 70419
+  },
+  {
+    "path": "Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "sha256": "74dfc3e30557da83985dc913a3e74e2db498d62d061b20b48cba0cdf7b37301b",
+    "bytes": 21204
+  },
+  {
+    "path": "Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+    "bytes": 40429
+  },
+  {
+    "path": "Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step",
+    "sha256": "7367f35dd5439e325ba3912de65e9200831fdc6698080ffd056cd268649ba41d",
+    "bytes": 141407
+  },
+  {
+    "path": "Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+    "bytes": 99639
+  },
+  {
+    "path": "Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+    "sha256": "bd8972b9b48a9ebf0234677fa76b5f752cb354283e07e409ddb81b9a3d9cac25",
+    "bytes": 324539
+  },
+  {
+    "path": "Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step",
+    "sha256": "66c17becb36ef719e1405e13451a402856396164745f07c43c94a6823390a019",
+    "bytes": 247684
+  },
+  {
+    "path": "RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+    "sha256": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+    "bytes": 1906878
+  },
+  {
+    "path": "Seizo_Mechanical/Pololu_D24V10F3.step",
+    "url": "https://www.pololu.com/file/0J1375/pololu-1a-step-down-voltage-regulator-d24v10fx.step",
+    "sha256": "2862eeb6840b8f51f2a6ff7b44dec49e17504cca8bf9baf4e6f64296aa3ba77b",
+    "bytes": 3273957
+  }
+]

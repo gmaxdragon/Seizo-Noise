@@ -44,13 +44,29 @@ I also used AI to help plan the project, research components, explain errors, an
 
 ## Project screenshots
 
-Screenshots linked from the project's existing [design journal](JOURNAL.md). These are design screenshots, not photographs of assembled hardware. The original image hosting has not been independently verified in this update.
+![PCB layout screenshot supplied by the project owner](images/pcb-layout.png)
 
-![Seizo Noise schematic screenshot from the design journal](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/992863afa62d2f14f9367e38f0c73247ee1573a4c983e0ef56d2ef6272b12b18.png)
+![3D PCB view supplied by the project owner](images/pcb-3d.png)
 
-![Seizo Noise PCB screenshot from the design journal](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/b07a3cc967ce7fdcc8562e6b62b49d9f07917e110be1c9793492786675563766.png)
+These are the owner's CAD screenshots, not photos of assembled hardware. The layout screenshot includes an earlier review-stage label; the editable design files below are Seizo Audio v1.0.
 
-![Seizo Noise later design screenshot from the journal](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/31cf951b3e377449c77c4743d434a1fb34adfe005c883ea70a102b97ae94bfb3.png)
+## Design files
+
+| File | Link |
+| --- | --- |
+| KiCad schematic | [speakerpcb.kicad_sch](hardware/speakerpcb.kicad_sch) |
+| PCB layout | [speakerpcb.kicad_pcb](hardware/speakerpcb.kicad_pcb) |
+| Complete KiCad project | [speakerpcb.kicad_pro](hardware/speakerpcb.kicad_pro) |
+| Board rules | [speakerpcb.kicad_dru](hardware/speakerpcb.kicad_dru) |
+| Included footprints | [Seizo_Audio.pretty](hardware/Seizo_Audio.pretty) |
+| Included symbols | [Seizo_Audio.kicad_sym](hardware/Seizo_Audio.kicad_sym) |
+| Assembly instructions | [Assembly.md](docs/Assembly.md) |
+| Connector pin maps | [Connections.md](docs/Connections.md) |
+| Native schematic check | [ERC.rpt](validation/ERC.rpt) |
+| Native board and schematic-parity check | [DRC.rpt](validation/DRC.rpt) |
+| Gerbers and drills | [Seizo_Audio_Gerbers.zip](fabrication/Seizo_Audio_Gerbers.zip) |
+
+Download the complete repository and open `hardware/speakerpcb.kicad_pro`. Keep the local symbol, footprint, and model folders with it. The native ERC and DRC reports were rerun during this publication, including copper refill and schematic-to-PCB comparison. These CAD checks do not replace assembly inspection or physical power/audio testing. Firmware has not been added just to satisfy the optional repository recommendation.
 
 ## Hardware reference
 
@@ -131,5 +147,5 @@ These rows account for all **48 fitted electrical components** in the saved carr
 
 - [Original development journal](JOURNAL.md), synced by Half-Life. The entries and hours were not changed in this documentation update.
 - [Bill of materials](BOM.csv), with source links and explicit pricing status.
-- Technical BOM basis: `Seizo_Audio_Design_v1.zip`, produced earlier in the project. This update adds documentation and image links; it does not upload or modify the KiCad design files.
+- The schematic, PCB, libraries and design records are now available under `hardware/`, `docs/` and `validation/`. Import provenance is recorded in [import_provenance.json](docs/import_provenance.json). [purchasing/BOM_engineering.csv](purchasing/BOM_engineering.csv) preserves the engineering BOM independently of platform sync; unpriced items remain unresolved.
 - The description at the top is the repository owner's existing text. This update used AI assistance to transfer and format the BOM, research catalog prices, and link the existing project images. It does not claim that this research or earlier AI-assisted CAD changes were completed unaided.

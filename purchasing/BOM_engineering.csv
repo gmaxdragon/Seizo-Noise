@@ -1,0 +1,45 @@
+Item,Qty,Supplier,Cost/item,Total Cost,link,References,Part or specification,Scope,Price status,Selection notes
+ESP32-S3 module,1,DigiKey,6.32,6.32,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8R8/15295891,U1,ESP32-S3-WROOM-1-N8R8,Carrier PCB,Catalog USD checked 2026-10-21,Selected in saved design; supplier page showed out of stock
+3.3V regulator module,1,Pololu,12.95,12.95,https://www.pololu.com/product/2830,U2,D24V10F3 product 2830,Carrier PCB,Catalog USD checked 2026-10-21,Use this five-pin module; not the earlier RECOM regulator
+USB data ESD protector,1,STMicroelectronics,,,https://www.st.com/en/protection-devices/usblc6-2.html,U3,USBLC6-2SC6 SOT-23-6,Carrier PCB,Price not yet verified,Selected in saved design
+USB-C receptacle,1,DigiKey,0.91,0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733,J1,GCT USB4085-GF-A,Carrier PCB,Catalog USD checked 2026-10-21,Do not substitute USB4105 without changing the footprint
+3.5mm stereo AUX input jack,1,DigiKey,1.69,1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701,J8,Same Sky SJ1-3533NG,Carrier PCB,Catalog USD checked 2026-10-21,TRS input; tip left ring right sleeve ground
+Two-position power terminal block,2,DigiKey,1.16,2.32,https://www.digikey.com/en/products/detail/phoenix-contact/1715721/260631,J3 J4,Phoenix Contact 1715721; 5.08mm pitch,Carrier PCB,Catalog USD checked 2026-10-21,Selected in saved design; supplier page showed out of stock
+USB resettable fuse,1,DigiKey,0.68,0.68,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168,F1,Littelfuse 1206L050/15YR; 0.5A hold 15V,Carrier PCB,Catalog USD checked 2026-10-21,1206 SMD PTC; not a precise 500mA current limiter
+MINI blade fuse holder,1,DigiKey,1.31,1.31,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306,F2,Keystone 3568,Carrier PCB,Catalog USD checked 2026-10-21,Holder only; separate removable fuse below
+2A MINI blade fuse insert,1,DigiKey,0.39,0.39,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900,F2 insert,Littelfuse 0297002.WXNV; 2A 32V,Assembly,Catalog USD checked 2026-10-21,Fits F2 holder; do not replace with a higher rating without review
+Reverse-polarity diode,1,,,,,D1,1N5822 DO-201AD; 3A 40V,Carrier PCB,Price not yet verified,Exact manufacturer suffix still to select
+Volume potentiometer,1,DigiKey,1.23,1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098,RV1,Bourns PTV09A-2020F-A103; 10k audio taper 20mm shaft,Carrier PCB,Catalog USD checked 2026-10-21,Match the selected shaft and body dimensions
+Audio source selector,1,C&K,,,https://www.ckswitches.com/media/1428/os.pdf,SW3,OS102011MS2QN1; nonshorting SPDT,Carrier PCB,Price not yet verified,Pin 2 common
+RESET and BOOT buttons,2,,,,,SW1 SW2,6x6mm normally-open THT; 6.5x4.5mm terminal pattern,Carrier PCB,Price not yet verified,Purchase part must match pin pairing and footprint
+10uF ceramic capacitors,2,,,,,C1 C5,1206; X5R or X7R; 16V minimum,Carrier PCB,Price not yet verified,Exact purchasing part still to select; check DC-bias capacitance
+100nF ceramic capacitors,4,,,,,C2 C7 C9 C10,1206; X7R; 50V,Carrier PCB,Price not yet verified,Exact purchasing part still to select
+1uF ceramic capacitors,2,,,,,C3 C4,1206; X5R or X7R; 16V minimum,Carrier PCB,Price not yet verified,Exact purchasing part still to select
+470uF electrolytic capacitor,1,Panasonic,,,https://industrial.panasonic.com/sa/products/pt/aluminum-cap-lead/models/EEUFR1E471,C6,EEUFR1E471; 25V; 10mm diameter; 5mm lead pitch,Carrier PCB,Price not yet verified,Observe polarity
+2.2uF audio coupling capacitor,1,,,,,C8,1206; X7R; 25V minimum; nonpolar,Carrier PCB,Price not yet verified,Exact purchasing part still to select
+10k resistors,4,,,,,R1 R2 R13 R17,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Exact purchasing part still to select
+5.1k resistors,2,,,,,R3 R4,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Separate USB CC pull-downs
+22 ohm resistors,2,,,,,R5 R6,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,USB series resistors
+4.7k resistors,6,,,,,R9 R10 R11 R12 R18 R19,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Audio mixing and I2C pull-ups
+18k resistor,1,,,,,R14,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Ultrasonic ECHO divider
+100k resistor,1,,,,,R15,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Microphone data pull-down
+6.8k resistor,1,,,,,R16,1206; 1%; 0.25W minimum,Carrier PCB,Price not yet verified,Amplifier input attenuation
+Two-pin male header,1,,,,,J5,1x2 vertical; 2.54mm pitch,Carrier PCB,Price not yet verified,Low-level amplifier audio; not a speaker output
+Three-pin male headers,2,,,,,J7 J11,1x3 vertical; 2.54mm pitch,Carrier PCB,Price not yet verified,DAC analog and optional UART
+Four-pin male headers,2,,,,,J10 J12,1x4 vertical; 2.54mm pitch,Carrier PCB,Price not yet verified,Ultrasonic and 3.3V I2C
+Five-pin male header,1,,,,,J6,1x5 vertical; 2.54mm pitch,Carrier PCB,Price not yet verified,DAC digital interface
+Six-pin male header,1,,,,,J9,1x6 vertical; 2.54mm pitch,Carrier PCB,Price not yet verified,Microphone interface; connect module by signal labels
+Regulator mating connector,1,,,,,U2 mounting,1x5 socket; 2.54mm pitch; match module mounting,Assembly,Price not yet verified,Pololu module includes male header; carrier mating socket and clearance need selection
+M3 mounting hardware sets,4,,,,,H1 H2 H3 H4,M3 screws with insulating standoffs and matching hardware,Assembly,Price not yet verified,Check existing stock before buying
+Custom speaker carrier PCB,1,JLCPCB,,,https://jlcpcb.com/capabilities/pcb-capabilities,PCB,100x80mm; 2 layers; 1.6mm FR-4; 1oz copper,Assembly,Week 3 fabrication quote not verified,Minimum pad gap 0.15mm; minimum drill 0.30mm; Week 1 board price not transferred
+I2S audio DAC breakout,1,DigiKey,4.95,4.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/6250/26249971,External at J6 J7,Adafruit PCM5102 product 6250,External audio,Catalog USD checked 2026-10-21,Power to VIN; not the 3V regulator output
+I2S microphone breakout,1,ShillehTek,9.99,9.99,https://shillehtek.com/products/inmp441-i2s-omnidirectional-microphone-module-with-soldering,External at J9,INMP441 pre-soldered module; ST-PKNE27OF3ENZ,External audio,Catalog USD checked 2026-10-21,One module; wire by labels; not a bare microphone IC
+Mono amplifier module,1,ShillehTek,6.99,6.99,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w,External at J4 J5,TPA3118 PBTL mono module; ST-HLHQRTMBQEIH,External audio,Catalog USD checked 2026-10-21,Intended 12V supply; 60W listing is not claimed at 12V
+Loudspeaker,1,,,,,External speaker,4 ohm full-range driver rated at least 20W,External audio,Exact model and price not selected,Must match amplifier and enclosure; connect only to SPK+ and SPK-
+12V amplifier supply,1,,,,,External supply,Regulated 12V DC supply with suitable current rating and connector,External audio,Exact model and price not selected,No mains circuitry on the PCB; confirm supply and wiring before power
+AUX cable,1,,,,,External cable,3.5mm stereo TRS male-to-male,External audio,Existing stock and price not verified,Pi or laptop headphone output to J8
+USB data cable,1,,,,,External cable,Host-compatible USB data cable to USB-C,External connection,Existing stock and price not verified,Must carry data; not charge-only
+Module and speaker wiring set,1,,,,,External wiring,Signal jumper wires plus appropriately rated 12V and speaker wires,External connection,Lengths and price not selected,Do not use thin signal jumpers for amplifier power
+Speaker enclosure,1,,,,,External enclosure,Enclosure sized for selected speaker driver,External audio,Design and cost not selected,Not present in carrier PCB geometry
+Distance sensor,1,,,,,Optional at J10,Compatible HC-SR04-style 5V module,Optional expansion,Check owned sensor before buying,Verify 3.3V trigger threshold and ECHO behavior; no separate power while ESP32 is off
+Shipping tax and duties,1,,,,,,Checkout charges,Delivery,Not quoted,Unknown charges are not zero and are excluded from the known-cost subtotal

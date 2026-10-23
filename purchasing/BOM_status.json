@@ -1,0 +1,9 @@
+{
+  "source": "BOM.csv as read immediately before this publication",
+  "priced_rows": 12,
+  "recorded_priced_subtotal_usd": "49.73",
+  "full_project_total_known": false,
+  "tier_2_limit_usd_from_user_page": "65.00",
+  "current_supplier_prices_rechecked": false,
+  "platform_bom_updated": false
+}

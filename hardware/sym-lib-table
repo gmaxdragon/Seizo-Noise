@@ -1,0 +1,17 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "Seizo_Audio")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/Seizo_Audio.kicad_sym")
+		(options "")
+		(descr "Included schematic symbols")
+	)
+	(lib
+		(name "power")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/Power.kicad_sym")
+		(options "")
+		(descr "KiCad power symbols used in this project")
+	)
+)

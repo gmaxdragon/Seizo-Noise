@@ -1,0 +1,14 @@
+(version 1)
+# General clearance stays 0.20mm. Do not globally relax it to clear J1.
+(rule "General copper clearance" (constraint clearance (min 0.20mm)))
+(rule "Amplifier positive supply tracks"
+ (condition "A.Type == 'Track' && A.NetName == '/AMP_12V*'")
+ (constraint track_width (min 1.5mm)))
+(rule "Logic power tracks"
+ (condition "A.Type == 'Track' && (A.NetName == '+3V3' || A.NetName == '/BOARD_5V')")
+ (constraint track_width (min 0.6mm)))
+# The unmodified USB4085 copper pads have 0.15mm intrinsic separation.
+# This exception applies only to pairs of pads inside this exact connector.
+(rule "USB4085 internal contact pitch"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == 'J1' && B.Reference == 'J1'")
+ (constraint clearance (min 0.15mm)))

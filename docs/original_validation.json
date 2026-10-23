@@ -1,0 +1,22 @@
+{
+  "project": "Seizo Audio",
+  "revision": "1.0",
+  "cad_engine": "KiCad 10.0.7",
+  "native_drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_pcb_parity_issues": 0,
+  "native_erc_errors_and_warnings": 0,
+  "portable_relocation_test": {
+    "drc_violations": 0,
+    "erc_report": "native command exited successfully with zero violations"
+  },
+  "scope": "Static design checks and manufacturer-dimension review. Not a physical build test.",
+  "models": "J8 and RV1 are simplified datasheet-derived envelope models; other included models retain their source provenance.",
+  "validation_timestamp_utc": "2026-10-22T03:32:15",
+  "source_sha256": {
+    "speakerpcb.kicad_pcb": "7881095b1b55d5f11ffd92a9d4515ec207ad4cbb3ef00d58fcd33aba0f942127",
+    "speakerpcb.kicad_sch": "2e30ae999e64253c2b8a558095eeed2edfd4bf6752a73ff36e12b39a2ad03f28",
+    "speakerpcb.kicad_pro": "5d8811d864368cb15ed979568110e285b00d54a3ee3e4dd15a506bc0376fd1d0",
+    "speakerpcb.kicad_dru": "d7614ec390d270b54a986bd9df49447585f9faa11ad19b938a72c794a5c15ccc"
+  }
+}

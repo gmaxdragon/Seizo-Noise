@@ -1,0 +1,18 @@
+{
+  "approved_narrative_sha256": "0131d37d8b996554ee7e4781ff088e57cf164467f31abb0b0e582312a2fa1208",
+  "bom_table_sha256": "1f3fe1e7b8a22f0dca0c8c9f6f7f971e91be1b09725b0934e0204c870518646f",
+  "root_bom_sha256": "541695f50826fdc6f96c551aad4d79ee65e5a669eb533981f26e3ac0ce23ac9b",
+  "journal_sha256": "9667d268a4f177e7b507754b1c05430a66d81879a37e71b0b2eae263d3e4fad3",
+  "images": [
+    {
+      "path": "images/pcb-layout.png",
+      "sha256": "8fd07b58eba08c19f70c2f31cfaf22b978fa4ca88a47454426f949fc62775a49"
+    },
+    {
+      "path": "images/pcb-3d.png",
+      "sha256": "7e27222d63a69afdfe9d34fb11cb1bce1ca48406ab6488a602bfd6bb532eecc3"
+    }
+  ],
+  "electrical_design_changed": false,
+  "imported_archive_sha256": "0032a841642361731a5c5e186989e2409f63c4f686f222033bbc06c33e816586"
+}

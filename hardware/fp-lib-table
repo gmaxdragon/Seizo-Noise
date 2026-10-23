@@ -1,0 +1,4 @@
+(fp_lib_table
+ (version 7)
+ (lib (name "Seizo_Audio")(type "KiCad")(uri "${KIPRJMOD}/Seizo_Audio.pretty")(options "")(descr "Included exact board footprints"))
+)

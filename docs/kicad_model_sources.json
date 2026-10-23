@@ -1,0 +1,87 @@
+[
+  {
+    "path": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "bytes": 43450
+  },
+  {
+    "path": "Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+    "bytes": 40414
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "bytes": 75616
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+    "bytes": 110633
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "bytes": 145684
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "bytes": 180757
+  },
+  {
+    "path": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step",
+    "bytes": 215953
+  },
+  {
+    "path": "Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.step",
+    "bytes": 804970
+  },
+  {
+    "path": "Button_Switch_THT.3dshapes/SW_PUSH_6mm.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step",
+    "bytes": 179934
+  },
+  {
+    "path": "TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "bytes": 70419
+  },
+  {
+    "path": "Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "bytes": 21204
+  },
+  {
+    "path": "Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "bytes": 40429
+  },
+  {
+    "path": "Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step",
+    "bytes": 141407
+  },
+  {
+    "path": "Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "bytes": 99639
+  },
+  {
+    "path": "Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+    "bytes": 324539
+  },
+  {
+    "path": "Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step",
+    "bytes": 247684
+  },
+  {
+    "path": "RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-S3-WROOM-1.step",
+    "bytes": 1906878
+  }
+]
