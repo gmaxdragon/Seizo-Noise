@@ -1,33 +1,34 @@
-Item,Qty,Supplier,Price,Unit Price,Unit Price ($),Cost/item,Total Cost,link,Purpose
-4-ohm loudspeaker - Visaton FR 10 F - 20W,1,DigiKey,11.71,11.71,11.71,11.71,11.71,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582,One NEW speaker; connect directly to amplifier SPK+ and SPK-; not a microphone or amplifier module
-ESP32-S3-WROOM-1-N8R8 bare module,1,Mouser,6.28,6.28,6.28,6.28,6.28,https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N8R8,Required exact N8R8 module; Mouser part 356-EP32S3WROOM1N8R8; excludes N8-only and 1U variants
-3.3V regulator breakout - wired assembly,1,DigiKey,3.95,3.95,3.95,3.95,3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412,Adafruit 4711; connect with three insulated wires to U2 pads 3/4/5; NOT a Pololu footprint drop-in; omit Pololu and socket
-USB data ESD protector,1,DigiKey,0.54,0.54,0.54,0.54,0.54,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559,Protects USB data lines from static discharge
-USB-C receptacle,1,DigiKey,0.91,0.91,0.91,0.91,0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733,USB power and data input
-Stereo AUX input jack,1,DigiKey,1.69,1.69,1.69,1.69,1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701,Receives audio from Pi or laptop headphone output
-Two-position power terminal block,2,DigiKey,0.58,0.58,0.58,0.58,1.16,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558,12V input and amplifier supply; 5.08mm pitch; manufacturer 1.30mm drill pattern checked against existing pads
-USB resettable fuse,1,DigiKey,0.68,0.68,0.68,0.68,0.68,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168,USB supply overcurrent protection; 0.5A hold
-MINI blade fuse holder,1,DigiKey,1.31,1.31,1.31,1.31,1.31,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306,Holds amplifier supply fuse
-2A MINI blade fuse,1,DigiKey,0.39,0.39,0.39,0.39,0.39,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900,Removable amplifier supply fuse
-Reverse-polarity diode,1,DigiKey,0.71,0.71,0.71,0.71,0.71,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597,Blocks reverse-polarity 12V input; DO-201AD
-Volume potentiometer,1,DigiKey,1.23,1.23,1.23,1.23,1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098,10k audio volume control with 20mm shaft
-Audio source selector,1,DigiKey,0.80,0.80,0.80,0.80,0.80,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602,Select AUX for this build; second source reserved for future DAC
-RESET and BOOT buttons,2,DigiKey,0.35,0.35,0.35,0.35,0.70,https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150,Manual reset and programming-mode controls
-10uF ceramic capacitor,2,DigiKey,0.25,0.25,0.25,0.25,0.50,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696,Supply decoupling; 1206 X5R 25V
-100nF ceramic capacitor,4,DigiKey,0.14,0.14,0.14,0.14,0.56,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675,Local supply bypass; 1206 X7R 50V
-1uF ceramic capacitor,2,DigiKey,0.24,0.24,0.24,0.24,0.48,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179,Timing and supply bypass; 1206 X7R 50V
-470uF electrolytic capacitor,1,DigiKey,1.06,1.06,1.06,1.06,1.06,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553,Amplifier supply reservoir; 25V; 10mm body and 5mm pitch
-2.2uF audio coupling capacitor,1,DigiKey,0.21,0.21,0.21,0.21,0.21,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730,Blocks DC in analog audio; nonpolar 1206 X7R 25V
-10k resistor,4,DigiKey,0.11,0.11,0.11,0.11,0.44,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430,Pull-ups and signal dividers; 1206 1% 0.25W
-5.1k resistor,2,DigiKey,0.10,0.10,0.10,0.10,0.20,https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947,USB-C CC pull-downs; 1206 1% 0.25W
-22 ohm resistor,2,DigiKey,0.11,0.11,0.11,0.11,0.22,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687,USB series resistors; 1206 1% 0.25W
-4.7k resistor,6,DigiKey,0.10,0.10,0.10,0.10,0.60,https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887,Audio mixing and I2C pull-ups; 1206 1% 0.25W
-18k resistor,1,DigiKey,0.10,0.10,0.10,0.10,0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539,Ultrasonic ECHO divider; 1206 1% 0.25W
-100k resistor,1,DigiKey,0.10,0.10,0.10,0.10,0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492,Microphone data pull-down; 1206 1% 0.25W
-6.8k resistor,1,DigiKey,0.10,0.10,0.10,0.10,0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028,Amplifier input attenuation; 1206 1% 0.25W
-40-pin breakaway header strip,1,DigiKey,1.23,1.23,1.23,1.23,1.23,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214,Cut into the seven carrier headers; 27 pins used
-I2S microphone breakout,1,DigiKey,6.95,6.95,6.95,6.95,6.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114,SPH0645LM4H microphone wired to J9 by signal labels; configure firmware for this mic
-Mono amplifier module,1,ShillehTek,6.99,6.99,6.99,6.99,6.99,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w,TPA3118 mono amplifier; use fused 12V input and separate speaker outputs
-12V amplifier power supply,1,DigiKey,10.33,10.33,10.33,10.33,10.33,https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642,Enclosed 12V 2.5A US-wall adapter; center-positive 5.5x2.1mm plug
-22 AWG insulated wire - 1m ten-conductor ribbon,1,DigiKey,4.25,4.25,4.25,4.25,4.25,https://www.digikey.com/en/products/detail/adafruit-industries-llc/6180/26690472,Separate conductors for short regulator; amplifier and speaker wiring; mark each wire at both ends; avoid long I2S leads
-Female 2.1mm DC barrel to screw-terminal adapter,1,DigiKey,2.00,2.00,2.00,2.00,2.00,https://www.digikey.com/en/products/detail/adafruit-industries-llc/368/5629434,Connect enclosed center-positive 12V supply to J3 using short wire; verify polarity and terminal tightness
+Item,Qty,Supplier,Cost/item,Total Cost,link
+4-ohm loudspeaker - Visaton FR 10 F - 20W,1,DigiKey,$11.71,$11.71,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582
+ESP32-S3-WROOM-1-N8R8 bare module,1,Mouser,$6.28,$6.28,https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N8R8
+3.3V regulator breakout - wired assembly,1,DigiKey,$3.95,$3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412
+USB data ESD protector,1,DigiKey,$0.54,$0.54,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559
+USB-C receptacle,1,DigiKey,$0.91,$0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733
+Stereo AUX input jack,1,DigiKey,$1.69,$1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
+Two-position power terminal block,2,DigiKey,$0.58,$1.16,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558
+USB resettable fuse,1,DigiKey,$0.68,$0.68,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168
+MINI blade fuse holder,1,DigiKey,$1.31,$1.31,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306
+2A MINI blade fuse,1,DigiKey,$0.39,$0.39,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900
+Reverse-polarity diode,1,DigiKey,$0.71,$0.71,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597
+Volume potentiometer,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
+Audio source selector,1,DigiKey,$0.80,$0.80,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602
+RESET and BOOT buttons,2,DigiKey,$0.35,$0.70,https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150
+10uF ceramic capacitor,2,DigiKey,$0.25,$0.50,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696
+100nF ceramic capacitor,4,DigiKey,$0.14,$0.56,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675
+1uF ceramic capacitor,2,DigiKey,$0.24,$0.48,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179
+470uF electrolytic capacitor,1,DigiKey,$1.06,$1.06,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553
+2.2uF audio coupling capacitor,1,DigiKey,$0.21,$0.21,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730
+10k resistor,4,DigiKey,$0.11,$0.44,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430
+5.1k resistor,2,DigiKey,$0.10,$0.20,https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947
+22 ohm resistor,2,DigiKey,$0.11,$0.22,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687
+4.7k resistor,6,DigiKey,$0.10,$0.60,https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887
+18k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539
+100k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492
+6.8k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028
+40-pin breakaway header strip,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214
+I2S microphone breakout,1,DigiKey,$6.95,$6.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114
+Mono amplifier module,1,ShillehTek,$6.99,$6.99,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w
+12V amplifier power supply,1,DigiKey,$10.33,$10.33,https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642
+22 AWG insulated wire - 1m ten-conductor ribbon,1,DigiKey,$4.25,$4.25,https://www.digikey.com/en/products/detail/adafruit-industries-llc/6180/26690472
+Female 2.1mm DC barrel to screw-terminal adapter,1,DigiKey,$2.00,$2.00,https://www.digikey.com/en/products/detail/adafruit-industries-llc/368/5629434
+Estimated total shipping,1,,,$0.00,
