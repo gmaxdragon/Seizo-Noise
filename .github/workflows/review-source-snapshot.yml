@@ -1,0 +1,24 @@
+name: Export current CAD audit snapshot
+on:
+  push:
+    paths:
+      - '.github/workflows/review-source-snapshot.yml'
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Capture source identity
+        run: |
+          mkdir -p audit-snapshot
+          git rev-parse HEAD > audit-snapshot/source-commit.txt
+          git ls-files hardware docs purchasing validation README.md BOM.csv > audit-snapshot/paths.txt
+          tar -czf audit-snapshot/source.tar.gz hardware docs purchasing validation README.md BOM.csv
+          sha256sum audit-snapshot/source.tar.gz > audit-snapshot/source.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seizo-current-cad-source
+          path: audit-snapshot/
+          retention-days: 7
