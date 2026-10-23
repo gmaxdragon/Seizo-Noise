@@ -1,32 +1,33 @@
-Item,Quantity,Unit Price,Vendor,URL,Purpose,Manufacturer Part Number,DigiKey Part Number,References,Line Total,Price Basis
-ESP32-S3 module,1,6.32,DigiKey,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8R8/15295891,Controller for USB and microphone capture,ESP32-S3-WROOM-1-N8R8,5407-ESP32-S3-WROOM-1-N8R8CT-ND,U1,6.32,Previous catalog check; listed on backorder
-3.3V regulator module,1,12.95,DigiKey Marketplace - Pololu,https://www.digikey.com/en/products/detail/pololu/2830/10451161,Converts board 5V to 3.3V,D24V10F3 product 2830,2183-2830-ND,U2,12.95,Previous catalog check; separate Pololu shipment
-USB data ESD protector,1,0.54,DigiKey,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559,Protects USB data lines from static discharge,USBLC6-2SC6,497-5235-1-ND,U3,0.54,Previous catalog check
-USB-C receptacle,1,0.91,DigiKey,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733,USB power and data input,USB4085-GF-A,2073-USB4085-GF-ACT-ND,J1,0.91,Previous catalog check
-Stereo AUX input jack,1,1.69,DigiKey,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701,Receives audio from Pi or laptop headphone output,SJ1-3533NG,CP1-3533NG-ND,J8,1.69,Previous catalog check
-Two-position power terminal block,2,1.16,DigiKey,https://www.digikey.com/en/products/detail/phoenix-contact/1715721/260631,12V input and protected amplifier power connections,1715721,277-1263-ND,J3 J4,2.32,Previous catalog check; listed on backorder
-USB resettable fuse,1,0.68,DigiKey,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168,USB supply overcurrent protection; 0.5A hold,1206L050/15YR,F3733CT-ND,F1,0.68,Previous catalog check
-MINI blade fuse holder,1,1.31,DigiKey,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306,Holds amplifier supply fuse,3568,36-3568-ND,F2,1.31,Previous catalog check
-2A MINI blade fuse,1,0.39,DigiKey,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900,Removable amplifier supply fuse,0297002.WXNV,F986-ND,F2 insert,0.39,Previous catalog check
-Reverse-polarity diode,1,0.71,DigiKey,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597,Blocks reverse-polarity 12V input; DO-201AD,1N5822,1801-1N5822CT-ND,D1,0.71,Previous catalog check
-Volume potentiometer,1,1.23,DigiKey,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098,10k audio volume control with 20mm shaft,PTV09A-2020F-A103,PTV09A-2020F-A103-ND,RV1,1.23,Previous catalog check
-Audio source selector,1,0.80,DigiKey,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602,Select AUX for this build; second source reserved for future DAC,OS102011MS2QN1,CKN9565-ND,SW3,0.80,Previous catalog check
-RESET and BOOT buttons,2,0.35,DigiKey,https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150,Manual reset and programming-mode controls,B3F-1000,SW400-ND,SW1 SW2,0.70,Previous catalog check
-10uF ceramic capacitor,2,0.25,DigiKey,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696,Supply decoupling; 1206 X5R 25V,CL31A106KAHNFNE,1276-3038-1-ND,C1 C5,0.50,Previous catalog check
-100nF ceramic capacitor,4,0.14,DigiKey,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675,Local supply bypass; 1206 X7R 50V,CL31B104KBCNNNC,1276-1017-1-ND,C2 C7 C9 C10,0.56,Previous catalog check
-1uF ceramic capacitor,2,0.24,DigiKey,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179,Timing and supply bypass; 1206 X7R 50V,CL31B105KBHSNNE,1276-3093-1-ND,C3 C4,0.48,Previous catalog check
-470uF electrolytic capacitor,1,1.06,DigiKey,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553,Amplifier supply reservoir; 25V; 10mm body and 5mm pitch,EEU-FR1E471,P14419-ND,C6,1.06,Previous catalog check
-2.2uF audio coupling capacitor,1,0.21,DigiKey,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730,Blocks DC in analog audio; nonpolar 1206 X7R 25V,CL31B225KAHNNNE,1276-1072-1-ND,C8,0.21,Previous catalog check
-10k resistor,4,0.11,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430,Pull-ups and signal dividers; 1206 1% 0.25W,RC1206FR-0710KL,311-10.0KFRCT-ND,R1 R2 R13 R17,0.44,Previous catalog check
-5.1k resistor,2,0.10,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947,USB-C CC pull-downs; 1206 1% 0.25W,RC1206FR-075K1L,311-5.10KFRCT-ND,R3 R4,0.20,Previous catalog check
-22 ohm resistor,2,0.11,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687,USB series resistors; 1206 1% 0.25W,RC1206FR-0722RL,311-22.0FRCT-ND,R5 R6,0.22,Previous catalog check
-4.7k resistor,6,0.10,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887,Audio mixing and I2C pull-ups; 1206 1% 0.25W,RC1206FR-074K7L,311-4.70KFRCT-ND,R9 R10 R11 R12 R18 R19,0.60,Previous catalog check
-18k resistor,1,0.10,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539,Ultrasonic ECHO divider; 1206 1% 0.25W,RC1206FR-0718KL,311-18.0KFRCT-ND,R14,0.10,Previous catalog check
-100k resistor,1,0.10,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492,Microphone data pull-down; 1206 1% 0.25W,RC1206FR-07100KL,311-100KFRCT-ND,R15,0.10,Previous catalog check
-6.8k resistor,1,0.10,DigiKey,https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028,Amplifier input attenuation; 1206 1% 0.25W,RC1206FR-076K8L,311-6.80KFRCT-ND,R16,0.10,Previous catalog check
-40-pin breakaway header strip,1,1.23,DigiKey,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214,Cut into the seven carrier headers; 27 pins used,PRPC040SAAN-RC,S1011EC-40-ND,J5 J6 J7 J9 J10 J11 J12,1.23,Previous catalog check
-Regulator mating socket,1,0.45,DigiKey,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPPC051LFBN-RC/810177,Five-pin 2.54mm socket for regulator module,PPPC051LFBN-RC,S7038-ND,U2 socket,0.45,Previous catalog check
-I2S microphone breakout,1,6.95,DigiKey,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114,SPH0645LM4H microphone wired to J9 by signal labels; configure firmware for this mic,3421,1528-1908-ND,External J9,6.95,USD listing rechecked 2026-10-22
-Mono amplifier module,1,6.99,ShillehTek,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w,TPA3118 mono amplifier; use fused 12V input and separate speaker outputs,ST-HLHQRTMBQEIH,,External J4 J5,6.99,Previous catalog check
-4-ohm loudspeaker,1,11.71,DigiKey,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582,20W-rated full-range driver; enclosure is separate,FR 10 F - 4 OHM,2056-FR10F-4OHM-ND,External speaker,11.71,Previous catalog check
-12V amplifier power supply,1,10.53,DigiKey,https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642,Enclosed 12V 2.5A US-wall adapter; center-positive 5.5x2.1mm plug,L6R30-120,364-1279-ND,External supply,10.53,USD listing rechecked 2026-10-22
+Item,Qty,Supplier,Cost/item,Total Cost,link
+ESP32-S3 module,1,DigiKey,$6.32,$6.32,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8R8/15295891
+3.3V regulator module,1,DigiKey Marketplace - Pololu,$12.95,$12.95,https://www.digikey.com/en/products/detail/pololu/2830/10451161
+USB data ESD protector,1,DigiKey,$0.54,$0.54,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559
+USB-C receptacle,1,DigiKey,$0.91,$0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733
+Stereo AUX input jack,1,DigiKey,$1.69,$1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
+Two-position power terminal block,2,DigiKey,$1.16,$2.32,https://www.digikey.com/en/products/detail/phoenix-contact/1715721/260631
+USB resettable fuse,1,DigiKey,$0.68,$0.68,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168
+MINI blade fuse holder,1,DigiKey,$1.31,$1.31,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306
+2A MINI blade fuse,1,DigiKey,$0.39,$0.39,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900
+Reverse-polarity diode,1,DigiKey,$0.71,$0.71,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597
+Volume potentiometer,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
+Audio source selector,1,DigiKey,$0.80,$0.80,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602
+RESET and BOOT buttons,2,DigiKey,$0.35,$0.70,https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150
+10uF ceramic capacitor,2,DigiKey,$0.25,$0.50,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696
+100nF ceramic capacitor,4,DigiKey,$0.14,$0.56,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675
+1uF ceramic capacitor,2,DigiKey,$0.24,$0.48,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179
+470uF electrolytic capacitor,1,DigiKey,$1.06,$1.06,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553
+2.2uF audio coupling capacitor,1,DigiKey,$0.21,$0.21,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730
+10k resistor,4,DigiKey,$0.11,$0.44,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430
+5.1k resistor,2,DigiKey,$0.10,$0.20,https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947
+22 ohm resistor,2,DigiKey,$0.11,$0.22,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687
+4.7k resistor,6,DigiKey,$0.10,$0.60,https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887
+18k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539
+100k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492
+6.8k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028
+40-pin breakaway header strip,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214
+Regulator mating socket,1,DigiKey,$0.45,$0.45,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPPC051LFBN-RC/810177
+I2S microphone breakout,1,DigiKey,$6.95,$6.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114
+Mono amplifier module,1,ShillehTek,$6.99,$6.99,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w
+4-ohm loudspeaker,1,DigiKey,$11.71,$11.71,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582
+12V amplifier power supply,1,DigiKey,$10.53,$10.53,https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642
+Estimated total shipping,1,,,$0.00,
