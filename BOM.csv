@@ -1,34 +1,18 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
-4-ohm loudspeaker - Visaton FR 10 F - 20W,1,DigiKey,$11.71,$11.71,https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/FR-10-F-4-OHM/10650582
-ESP32-S3-WROOM-1-N8R8 bare module,1,Mouser,$6.28,$6.28,https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N8R8
-3.3V regulator breakout - wired assembly,1,DigiKey,$3.95,$3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4711/13162412
-USB data ESD protector,1,DigiKey,$0.54,$0.54,https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2SC6/1040559
-USB-C receptacle,1,DigiKey,$0.91,$0.91,https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733
-Stereo AUX input jack,1,DigiKey,$1.69,$1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
-Two-position power terminal block,2,DigiKey,$0.58,$1.16,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558
-USB resettable fuse,1,DigiKey,$0.68,$0.68,https://www.digikey.com/en/products/detail/littelfuse-inc/1206L050-15YR/2486168
-MINI blade fuse holder,1,DigiKey,$1.31,$1.31,https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306
-2A MINI blade fuse,1,DigiKey,$0.39,$0.39,https://www.digikey.com/en/products/detail/littelfuse-inc/0297002-WXNV/124900
-Reverse-polarity diode,1,DigiKey,$0.71,$0.71,https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N5822/7366597
-Volume potentiometer,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
-Audio source selector,1,DigiKey,$0.80,$0.80,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602
-RESET and BOOT buttons,2,DigiKey,$0.35,$0.70,https://www.digikey.com/en/products/detail/aratas-america-llc/B3F-1000/33150
-10uF ceramic capacitor,2,DigiKey,$0.25,$0.50,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31A106KAHNFNE/3888696
-100nF ceramic capacitor,4,DigiKey,$0.14,$0.56,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B104KBCNNNC/3886675
-1uF ceramic capacitor,2,DigiKey,$0.24,$0.48,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B105KBHSNNE/3891179
-470uF electrolytic capacitor,1,DigiKey,$1.06,$1.06,https://www.digikey.com/en/products/detail/panasonic-industry/EEU-FR1E471/2433553
-2.2uF audio coupling capacitor,1,DigiKey,$0.21,$0.21,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL31B225KAHNNNE/3886730
-10k resistor,4,DigiKey,$0.11,$0.44,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0710KL/731430
-5.1k resistor,2,DigiKey,$0.10,$0.20,https://www.digikey.com/en/products/detail/yageo/RC1206FR-075K1L/728947
-22 ohm resistor,2,DigiKey,$0.11,$0.22,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0722RL/728687
-4.7k resistor,6,DigiKey,$0.10,$0.60,https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887
-18k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-0718KL/731539
-100k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100KL/728492
-6.8k resistor,1,DigiKey,$0.10,$0.10,https://www.digikey.com/en/products/detail/yageo/RC1206FR-076K8L/729028
-40-pin breakaway header strip,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC040SAAN-RC/2775214
-I2S microphone breakout,1,DigiKey,$6.95,$6.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3421/6691114
-Mono amplifier module,1,ShillehTek,$6.99,$6.99,https://shillehtek.com/products/tpa3118-pbtl-single-digital-amplifier-board-1x60w
-12V amplifier power supply,1,DigiKey,$10.33,$10.33,https://www.digikey.com/en/products/detail/tri-mag-llc/L6R30-120/7682642
-22 AWG insulated wire - 1m ten-conductor ribbon,1,DigiKey,$4.25,$4.25,https://www.digikey.com/en/products/detail/adafruit-industries-llc/6180/26690472
-Female 2.1mm DC barrel to screw-terminal adapter,1,DigiKey,$2.00,$2.00,https://www.digikey.com/en/products/detail/adafruit-industries-llc/368/5629434
-Estimated total shipping,1,,,$0.00,
+J1: 2-pin 5.08mm screw terminal,1,DigiKey,$0.58,$0.58,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558
+F1: 0.75A hold resettable PTC fuse,1,DigiKey,$0.56,$0.56,https://www.digikey.com/en/products/detail/littelfuse-inc/RXEF075/5015922
+D1: Schottky 1A 40V axial diode DO41,1,DigiKey,$0.28,$0.28,https://www.digikey.com/en/products/detail/panjit-international-inc/1N5819-R2-00001/15806519
+C1: 470uF 25V low ESR radial 10mm 5mm leads,1,DigiKey,$1.06,$1.06,https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEU-FR1E471/2433553
+C2: 100nF X7R 50V radial 5.08mm - KEMET C052C104K5R5TA,1,DigiKey,$1.29,$1.29,https://www.digikey.com/en/products/detail/kemet/C052C104K5R5TA/12699186
+J4: 3.5mm TRS stereo right-angle PCB jack,1,DigiKey,$1.69,$1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
+R1 R2: 4.7k 1/4W THT resistor,2,DigiKey,$0.10,$0.20,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-4K7/1846
+R3: 100k 1/4W THT resistor,1,DigiKey,$0.11,$0.11,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-100K/245
+RV1: 10k logarithmic 20mm D-shaft THT potentiometer,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
+J3: 40-pin breakaway 2.54mm THT header,1,DigiKey,$1.23,$1.23,https://www.digikey.com/en/products/detail/PRPC040SAAN-RC/S1011EC-40-ND/2775214
+EXT AMP: Assembled PAM8302 mono class-D amplifier,1,DigiKey,$3.95,$3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2130/5761279
+EXT SPK: Enclosed 4ohm 3W speaker with JST-PH lead,1,DigiKey,$3.95,$3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3351/6612456
+EXT MIC: USB microphone for Raspberry Pi,1,DigiKey,$5.95,$5.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3367/6623861
+EXT WIRE: 22AWG stranded silicone ribbon wire 10x 1m,1,DigiKey,$4.25,$4.25,https://www.digikey.com/en/products/filter/flat-ribbon-cables/adafruit-industries-llc/472
+EXT AUX: 3.5mm TRS stereo male-to-male 1m cable,1,DigiKey,$2.95,$2.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4066/9838303
+EXT KNOB: 6mm D-shaft potentiometer knob,1,DigiKey,$1.18,$1.18,https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/CL170823BR/25579849
+Custom 85x60mm 2-layer PCB (ESTIMATE ONLY; verify manufacturer quote),1,JLCPCB,$4.00,$4.00,https://jlcpcb.com/

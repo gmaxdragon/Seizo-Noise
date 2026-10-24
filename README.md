@@ -1,5 +1,8 @@
 # Seizo-Noise
 
+> **Engineering update, 24 October 2026:** A separate [**Seizo Noise v2.1 native KiCad source**](v2_1/ENGINEERING_REVIEW.md) and matching [BOM](purchasing/BOM_HalfLife_v2_1.csv) have been added. The narrative and screenshots below document the original **v1 ESP32/12V board**, not the simplified v2.1 5V Pi audio carrier. The root BOM now shows the **v2.1 priced subset** ($34.46 before missing shipping, tax and hardware); the complete legacy v1 BOM is [archived](purchasing/legacy_v1_BOM_archive.csv). v2.1 CAD has archived clean ERC/DRC but is not approved for PCB fabrication or order until the actual jack and potentiometer fit is checked. Neither board has been physically assembled or audio-tested. This note is a technical engineering update and does not alter the owner's account of the project.
+
+
 ## What I made
 
 Seizo Noise is a PCB I designed for my robotic arm. The main reason I made it was that I wanted the arm to be able to talk and take in voice commands. I thought it would be really cool to say, “Hey, Seizo,” and have it respond with something like, “Yeah, what’s up?” I also want it to be able to play music.

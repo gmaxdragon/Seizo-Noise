@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/work/Seizo_Noise_v2_FRESH_CHECK/Seizo_Noise_v2.kicad_sch</source>
+    <date>2026-10-24T06:30:52</date>
+    <tool>Eeschema 10.0.7-10.0.7~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Seizo_Noise_v2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>470uF 25V</value>
+      <footprint>Seizo_Noise_v2:C_Panasonic_EEUFR1E471_P5mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:C_Panasonic_EEUFR1E471_P5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="SeizoV2" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e3512fc-2a1b-4287-9287-1cc1ad069f8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF 50V</value>
+      <footprint>Seizo_Noise_v2:C_100nF_Radial_P5.08mm</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:C_100nF_Radial_P5.08mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="SeizoV2" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef2c9814-72e3-40ab-b0ce-6b566a87cd0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>1N5819</value>
+      <footprint>Seizo_Noise_v2:D_1N5819_DO41_P10.16mm</footprint>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:D_1N5819_DO41_P10.16mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="SeizoV2" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e84cc0d-d31e-4124-b25a-57275ab8c986</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>RXEF075 0.75A</value>
+      <footprint>Seizo_Noise_v2:PTC_Littelfuse_RXEF075_P5.10mm</footprint>
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:PTC_Littelfuse_RXEF075_P5.10mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resettable fuse, polymeric positive temperature coefficient</field>
+      </fields>
+      <libsource lib="SeizoV2" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2533cfa3-db95-454b-ae44-71d03e20e55d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>5V_IN (OSTTC022162)</value>
+      <footprint>Seizo_Noise_v2:TerminalBlock_OSTTC022162_P5.08mm</footprint>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:TerminalBlock_OSTTC022162_P5.08mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="SeizoV2" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>082cbc9c-973a-45de-81c8-c221dec98e4b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>PAM8302 INPUT</value>
+      <footprint>Seizo_Noise_v2:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="SeizoV2" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb9a8805-715b-42af-bc5e-23f0ef04e774</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>SJ1-3533NG</value>
+      <footprint>Seizo_Noise_v2:Jack_SJ1-3533NG</footprint>
+      <description>Audio Jack, 3 Poles (Stereo / TRS)</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:Jack_SJ1-3533NG</field>
+        <field name="Datasheet"/>
+        <field name="Description">Audio Jack, 3 Poles (Stereo / TRS)</field>
+      </fields>
+      <libsource lib="SeizoV2" part="AudioJack3" description="Audio Jack, 3 Poles (Stereo / TRS)"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="audio jack receptacle stereo headphones phones TRS connector"/>
+      <property name="ki_fp_filters" value="Jack*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>037bf8ea-9e90-49a7-bff2-0c55850e26d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="S"/>
+            <pin num="R"/>
+            <pin num="T"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>Seizo_Noise_v2:R_0207_P7.62mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:R_0207_P7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="SeizoV2" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd1126f7-e0ae-4b43-83ca-44bbb3a1f4a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Seizo_Noise_v2:R_0207_P7.62mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:R_0207_P7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="SeizoV2" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>194ef653-7257-4d95-b0d0-245b96353781</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>Seizo_Noise_v2:R_0207_P7.62mm</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:R_0207_P7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="SeizoV2" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4fcfbcb4-6244-46f0-a114-bbe445eb8d1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RV1">
+      <value>PTV09A-2020F-A103 10k AUDIO</value>
+      <footprint>Seizo_Noise_v2:Pot_Bourns_PTV09A_2020F_A103</footprint>
+      <description>Potentiometer</description>
+      <fields>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Type">POT</field>
+        <field name="Sim.Pins">1=r0 2=wiper 3=r1</field>
+        <field name="Footprint">Seizo_Noise_v2:Pot_Bourns_PTV09A_2020F_A103</field>
+        <field name="Datasheet"/>
+        <field name="Description">Potentiometer</field>
+      </fields>
+      <libsource lib="SeizoV2" part="R_Potentiometer" description="Potentiometer"/>
+      <property name="Sim.Device" value="R"/>
+      <property name="Sim.Type" value="POT"/>
+      <property name="Sim.Pins" value="1=r0 2=wiper 3=r1"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="resistor variable"/>
+      <property name="ki_fp_filters" value="Potentiometer*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f91c8c1-d02b-449f-b53c-27cfb3ff3654</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>Seizo_Noise_v2:TP_THT_Probe_2.6mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:TP_THT_Probe_2.6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="SeizoV2" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92eafb02-7a87-4a0e-a75f-bffbb2208243</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>Seizo_Noise_v2:TP_THT_Probe_2.6mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:TP_THT_Probe_2.6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="SeizoV2" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07c768a1-caf1-4799-bfce-462d627440fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>Seizo_Noise_v2:TP_THT_Probe_2.6mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">Seizo_Noise_v2:TP_THT_Probe_2.6mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="SeizoV2" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Seizo_Noise_v2"/>
+      <property name="Sheetfile" value="Seizo_Noise_v2.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee29ad5b-a1f4-4990-a3fb-326e070fd7b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SeizoV2" part="AudioJack3">
+      <description>Audio Jack, 3 Poles (Stereo / TRS)</description>
+      <footprints>
+        <fp>Jack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Audio Jack, 3 Poles (Stereo / TRS)</field>
+      </fields>
+      <pins>
+        <pin num="R" name="" type="passive"/>
+        <pin num="S" name="" type="passive"/>
+        <pin num="T" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resettable fuse, polymeric positive temperature coefficient</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="R_Potentiometer">
+      <description>Potentiometer</description>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Potentiometer</field>
+        <field name="Sim.Device">R</field>
+        <field name="Sim.Type">POT</field>
+        <field name="Sim.Pins">1=r0 2=wiper 3=r1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeizoV2" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SeizoV2">
+      <uri>${KIPRJMOD}/Seizo_V2_Symbols.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+5V_AUDIO" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="2" name="/AMP_IN" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="3" name="/AUDIO_MIX" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="4" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J4" pin="S" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(D1-A)" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(J1-Pin_1)" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(J4-PadR)" class="Default">
+      <node ref="J4" pin="R" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(J4-PadT)" class="Default">
+      <node ref="J4" pin="T" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+  </nets>
+</export>

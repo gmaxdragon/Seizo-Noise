@@ -1,0 +1,37 @@
+{
+  "schematic_component_refs": 14,
+  "board_footprints": 18,
+  "electrical_pad_to_net_assignments": 29,
+  "electrical_nets": 8,
+  "independent_pad_net_parity": "PASS",
+  "native_ERC_errors": 0,
+  "native_ERC_warnings": 0,
+  "native_DRC_violations": 0,
+  "native_DRC_unconnected": 0,
+  "native_DRC_schematic_parity_issues": 0,
+  "board_width_mm": 85,
+  "board_height_mm": 60,
+  "copper_layers": 2,
+  "track_segments": 176,
+  "ground_zone": true,
+  "volume_center_mm": [
+    78.0,
+    26.0
+  ],
+  "volume_metal_tab_spacing_mm": 8.2,
+  "volume_tab_hole_diameter_mm": 3.3,
+  "jack_center_mm": [
+    30.0,
+    6.0
+  ],
+  "jack_plated_slot_mm": [
+    1.1,
+    2.2
+  ],
+  "drill_slot_commands": 3,
+  "manufacturer_mechanical_fit_physically_tested": false,
+  "supply_loaded_verified": false,
+  "acoustic_tested": false,
+  "Pi_USB_microphone_recorded": false,
+  "fabrication_released": false
+}
