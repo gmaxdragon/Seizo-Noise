@@ -1,0 +1,87 @@
+name: Validate Seizo v2.1 ground routing (candidate only)
+on:
+  push:
+    branches:
+      - gnd-routing-review-20261024
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  electrical-cad-and-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install native KiCad 10 stable
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y software-properties-common xvfb
+          sudo add-apt-repository -y ppa:kicad/kicad-10.0-releases
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends kicad
+          kicad-cli version
+      - name: Refill ground planes and run KiCad ERC / DRC with schematic parity
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          set -euo pipefail
+          mkdir -p candidate-output/gerbers
+          cp v2_1/Seizo_Noise_v2.kicad_pcb candidate-output/Seizo_Noise_v2.kicad_pcb
+          # Execute checks in the original source directory to resolve native symbols and footprints.
+          kicad-cli sch erc --severity-all --exit-code-violations \
+            --output candidate-output/ERC_native.rpt v2_1/Seizo_Noise_v2.kicad_sch
+          kicad-cli pcb drc --severity-all --schematic-parity --all-track-errors \
+            --refill-zones --save-board --exit-code-violations \
+            --output candidate-output/DRC_native.rpt v2_1/Seizo_Noise_v2.kicad_pcb
+          cp v2_1/Seizo_Noise_v2.kicad_pcb candidate-output/Seizo_Noise_v2_GND_ROUTED_REFILLED.kicad_pcb
+          python3 - <<'PY'
+          from pathlib import Path
+          text=Path('v2_1/Seizo_Noise_v2.kicad_pcb').read_text()
+          import re
+          assert text.count('(net "GND")') >= 50, 'GND tracks missing'
+          assert re.search(r'\(zone\s*\(net "GND"\)\s*\(layer "B.Cu"\)',text), 'B.Cu zone missing'
+          assert re.search(r'\(filled_polygon\s*\(layer "B.Cu"\)',text), 'B.Cu zone not actually refilled'
+          print('B.Cu GND zone exists and has filled polygon')
+          PY
+      - name: Regenerate native Gerber / plated slots / drill exports
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          set -euo pipefail
+          kicad-cli pcb export gerbers --check-zones \
+            --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts \
+            --output candidate-output/gerbers/ v2_1/Seizo_Noise_v2.kicad_pcb
+          kicad-cli pcb export drill --excellon-separate-th \
+            --output candidate-output/gerbers/ v2_1/Seizo_Noise_v2.kicad_pcb
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile,hashlib,json
+          p=Path('candidate-output/gerbers')
+          fs=[f for f in p.iterdir() if f.is_file() and (f.suffix in ['.gbl','.gtl','.gbs','.gts','.gbo','.gto','.gm1','.drl','.gbrjob'] or f.name.endswith('job.gbrjob'))]
+          assert len(fs)>=9, [(x.name,x.suffix) for x in fs]
+          assert any(x.name.endswith('PTH.drl') for x in fs)
+          assert any(x.name.endswith('NPTH.drl') for x in fs)
+          z=Path('candidate-output/Seizo_Noise_v2_1_GROUND_ROUTED_JLCPCB_REVIEW_ONLY.zip')
+          with zipfile.ZipFile(z,'w',compression=zipfile.ZIP_DEFLATED) as dest:
+              for f in fs: dest.write(f,arcname=f.name)
+          print('Gerbers',len(fs),'ZIP',z,'bytes',z.stat().st_size)
+          Path('candidate-output/REVIEW_STATUS.txt').write_text('KiCad native ERC/DRC passed as preserved in reports. This is an electrical CAD candidate only. PCB fab and physical fit remain HOLD pending real pot/jack/adapter checks.\n')
+          PY
+      - name: Export native 2D PCB views
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          set -euo pipefail
+          kicad-cli pcb export svg --mode-single --check-zones \
+             --layers F.Cu,F.Silkscreen,Edge.Cuts --output candidate-output/pcb_top.svg v2_1/Seizo_Noise_v2.kicad_pcb
+          kicad-cli pcb export svg --mode-single --check-zones \
+             --layers B.Cu,Edge.Cuts --output candidate-output/pcb_bottom_ground.svg v2_1/Seizo_Noise_v2.kicad_pcb
+          # 3D photo-like image is optional, 2D copper views are authoritative.
+          xvfb-run -a kicad-cli pcb render --quality high --side top --width 1600 --height 1100 \
+            --output candidate-output/pcb_top_3d.png v2_1/Seizo_Noise_v2.kicad_pcb || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seizo-v2-1-ground-routing-candidate-verification
+          path: candidate-output/
+          retention-days: 7
