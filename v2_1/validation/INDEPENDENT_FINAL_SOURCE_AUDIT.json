@@ -1,0 +1,198 @@
+{
+  "board_sha256": "3e3fba5dd51b5f0ef5532a5558262cdd194abae27d6753fc8da3e996ed662f01",
+  "checks": [
+    {
+      "test": "schematic vs PCB net-to-pad parity",
+      "status": "pass",
+      "count": 29
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "/AMP_IN",
+      "status": "pass",
+      "track_count": 56,
+      "pad_count": 4,
+      "islands": 1,
+      "length_mm": 57.43
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "GND",
+      "status": "pass",
+      "track_count": 45,
+      "pad_count": 9,
+      "islands": 1,
+      "length_mm": 216.73
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "/+5V_AUDIO",
+      "status": "pass",
+      "track_count": 38,
+      "pad_count": 5,
+      "islands": 1,
+      "length_mm": 54.7
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "Net-(J1-Pin_1)",
+      "status": "pass",
+      "track_count": 12,
+      "pad_count": 2,
+      "islands": 1,
+      "length_mm": 14.24
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "/AUDIO_MIX",
+      "status": "pass",
+      "track_count": 54,
+      "pad_count": 3,
+      "islands": 1,
+      "length_mm": 42.42
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "Net-(J4-PadR)",
+      "status": "pass",
+      "track_count": 8,
+      "pad_count": 2,
+      "islands": 1,
+      "length_mm": 23.07
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "Net-(J4-PadT)",
+      "status": "pass",
+      "track_count": 6,
+      "pad_count": 2,
+      "islands": 1,
+      "length_mm": 17.57
+    },
+    {
+      "test": "explicit pad/track connectivity",
+      "net": "Net-(D1-A)",
+      "status": "pass",
+      "track_count": 2,
+      "pad_count": 2,
+      "islands": 1,
+      "length_mm": 5.1
+    },
+    {
+      "test": "explicit nine-pad GND / 45 0.45mm tracks",
+      "status": "pass"
+    },
+    {
+      "test": "F.Cu GND copper pour has filled polygons",
+      "status": "pass",
+      "polygon_count": 1
+    },
+    {
+      "test": "B.Cu GND copper pour has filled polygons",
+      "status": "pass",
+      "polygon_count": 3
+    },
+    {
+      "test": "85x60mm board footprint",
+      "status": "pass",
+      "bounds": [
+        0.0,
+        0.0,
+        85.0,
+        60.0
+      ]
+    },
+    {
+      "test": "PTV09A-2 pot boardlocks 8.2mm spacing",
+      "status": "pass",
+      "clip_spacing_mm": 8.2,
+      "clip_drills": [
+        [
+          "3.3"
+        ],
+        [
+          "3.3"
+        ]
+      ],
+      "fit": "not manufacturer rectangular aperture; requires trial"
+    },
+    {
+      "test": "pot three pin 5mm span",
+      "status": "pass",
+      "positions": [
+        21.0,
+        23.5,
+        26.0
+      ]
+    },
+    {
+      "test": "SJ1-3533NG pin spacing against drawing",
+      "status": "pass",
+      "relative_xy": {
+        "R": [
+          2.0,
+          7.9
+        ],
+        "S": [
+          0.0,
+          0.0
+        ],
+        "T": [
+          2.0,
+          2.4
+        ]
+      },
+      "slots": [
+        [
+          "oval",
+          "2.2",
+          "1.1"
+        ],
+        [
+          "oval",
+          "2.2",
+          "1.1"
+        ],
+        [
+          "oval",
+          "2.2",
+          "1.1"
+        ]
+      ],
+      "note": "slot corners and plating tolerances untested"
+    },
+    {
+      "test": "amplifier power/audio pin mapping",
+      "status": "pass",
+      "mapping": "VIN, GND, A+, A- (J3 pins 1-4)"
+    },
+    {
+      "test": "polarized capacitor and Schottky downstream net check",
+      "status": "pass"
+    },
+    {
+      "test": "exact native KiCad output vs PCB source",
+      "status": "pass",
+      "sha256": "3e3fba5dd51b5f0ef5532a5558262cdd194abae27d6753fc8da3e996ed662f01"
+    },
+    {
+      "test": "10 Gerber/Excellon export files identical to native CI artifact",
+      "status": "pass",
+      "zip_sha256": "ad3efe8985af011c23d664b8237302d8a878e47cb036e4870b62a01ddd7eb537"
+    },
+    {
+      "test": "Excellon 3 plated AUX slots and 4 NPTH mounts",
+      "status": "pass",
+      "plated_slots": 3,
+      "unplated_holes": 4
+    },
+    {
+      "test": "archived native KiCad DRC/ERC reports present",
+      "status": "pass",
+      "qualification": "archived job, not fresh local CLI run"
+    }
+  ],
+  "errors": [],
+  "score": "22/22",
+  "outcome": "PASS SOURCE/DIGITAL"
+}
