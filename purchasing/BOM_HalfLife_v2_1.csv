@@ -1,18 +1,18 @@
-Item,Qty,Supplier,Cost/item,Total Cost,link
-J1: 2-pin 5.08mm screw terminal,1,DigiKey,0.58,0.58,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558
-F1: 0.75A hold resettable PTC fuse,1,DigiKey,0.56,0.56,https://www.digikey.com/en/products/detail/littelfuse-inc/RXEF075/5015922
-D1: Schottky 1A 40V axial diode DO41,1,DigiKey,0.28,0.28,https://www.digikey.com/en/products/detail/panjit-international-inc/1N5819-R2-00001/15806519
-C1: 470uF 25V low ESR radial 10mm 5mm leads,1,DigiKey,1.06,1.06,https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEU-FR1E471/2433553
-C2: 100nF X7R 50V radial 5.08mm - KEMET C052C104K5R5TA,1,DigiKey,1.29,1.29,https://www.digikey.com/en/products/detail/kemet/C052C104K5R5TA/12699186
-J4: 3.5mm TRS stereo right-angle PCB jack,1,DigiKey,1.69,1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
-R1 R2: 4.7k 1/4W THT resistor,2,DigiKey,0.10,0.20,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-4K7/1846
-R3: 100k 1/4W THT resistor,1,DigiKey,0.11,0.11,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-100K/245
-RV1: 10k logarithmic 20mm D-shaft THT potentiometer,1,DigiKey,1.23,1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
-J3: 40-pin breakaway 2.54mm THT header,1,DigiKey,1.23,1.23,https://www.digikey.com/en/products/detail/PRPC040SAAN-RC/S1011EC-40-ND/2775214
-EXT AMP: Assembled PAM8302 mono class-D amplifier,1,DigiKey,3.95,3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2130/5761279
-EXT SPK: Enclosed 4ohm 3W speaker with JST-PH lead,1,DigiKey,3.95,3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3351/6612456
-EXT MIC: USB microphone for Raspberry Pi,1,DigiKey,5.95,5.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3367/6623861
-EXT WIRE: 22AWG stranded silicone ribbon wire 10x 1m,1,DigiKey,4.25,4.25,https://www.digikey.com/en/products/filter/flat-ribbon-cables/adafruit-industries-llc/472
-EXT AUX: 3.5mm TRS stereo male-to-male 1m cable,1,DigiKey,2.95,2.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4066/9838303
-EXT KNOB: 6mm D-shaft potentiometer knob,1,DigiKey,1.18,1.18,https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/CL170823BR/25579849
-Custom 85x60mm 2-layer PCB (ESTIMATE ONLY; verify manufacturer quote),1,JLCPCB,4.00,4.00,https://jlcpcb.com/
+Item,Qty,Supplier,Total Cost,Unit Price,Price,link
+J1: 2-pin 5.08mm screw terminal,1,DigiKey,0.58,0.58,0.58,https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558
+F1: 0.75A hold resettable PTC fuse,1,DigiKey,0.56,0.56,0.56,https://www.digikey.com/en/products/detail/littelfuse-inc/RXEF075/5015922
+D1: Schottky 1A 40V axial diode DO41,1,DigiKey,0.28,0.28,0.28,https://www.digikey.com/en/products/detail/panjit-international-inc/1N5819-R2-00001/15806519
+C1: 470uF 25V low ESR radial 10mm 5mm leads,1,DigiKey,1.06,1.06,1.06,https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEU-FR1E471/2433553
+C2: 100nF X7R 50V radial 5.08mm - KEMET C052C104K5R5TA,1,DigiKey,1.29,1.29,1.29,https://www.digikey.com/en/products/detail/kemet/C052C104K5R5TA/12699186
+J4: 3.5mm TRS stereo right-angle PCB jack,1,DigiKey,1.69,1.69,1.69,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701
+R1 R2: 4.7k 1/4W THT resistor,2,DigiKey,0.20,0.10,0.10,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-4K7/1846
+R3: 100k 1/4W THT resistor,1,DigiKey,0.11,0.11,0.11,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-100K/245
+RV1: 10k logarithmic 20mm D-shaft THT potentiometer,1,DigiKey,1.23,1.23,1.23,https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098
+J3: 40-pin breakaway 2.54mm THT header,1,DigiKey,1.23,1.23,1.23,https://www.digikey.com/en/products/detail/PRPC040SAAN-RC/S1011EC-40-ND/2775214
+EXT AMP: Assembled PAM8302 mono class-D amplifier,1,DigiKey,3.95,3.95,3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2130/5761279
+EXT SPK: Enclosed 4ohm 3W speaker with JST-PH lead,1,DigiKey,3.95,3.95,3.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3351/6612456
+EXT MIC: USB microphone for Raspberry Pi,1,DigiKey,5.95,5.95,5.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/3367/6623861
+EXT WIRE: 22AWG stranded silicone ribbon wire 10x 1m,1,DigiKey,4.25,4.25,4.25,https://www.digikey.com/en/products/filter/flat-ribbon-cables/adafruit-industries-llc/472
+EXT AUX: 3.5mm TRS stereo male-to-male 1m cable,1,DigiKey,2.95,2.95,2.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4066/9838303
+EXT KNOB: 6mm D-shaft potentiometer knob,1,DigiKey,1.18,1.18,1.18,https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/CL170823BR/25579849
+Custom 85x60mm 2-layer PCB (ESTIMATE ONLY; verify manufacturer quote),1,JLCPCB,4.00,4.00,4.00,https://jlcpcb.com/

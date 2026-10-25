@@ -28,7 +28,7 @@
 | [Custom 85x60mm 2-layer PCB (ESTIMATE ONLY; verify manufacturer quote)](https://jlcpcb.com/) | 1 | $4.00 | $4.00 |
 | **TOTAL (priced items only)** | | | **$34.46** |
 
-**Import file:** [BOM.csv](BOM.csv) uses plain numeric USD prices (e.g. `0.58`, not `$0.58`) for more reliable CSV parsing. The same current revision is backed up in [purchasing/BOM_HalfLife_v2_1.csv](purchasing/BOM_HalfLife_v2_1.csv). [All unpriced engineering items](purchasing/BOM_Engineering_v2_1.csv) are tracked separately and are not assumed free. Importing the BOM into Half-Life and seeing the prices there is still a separate verification step.
+**Import troubleshooting:** [BOM.csv](BOM.csv) now has explicit numeric `Unit Price`, `Price` and `Total Cost` fields. An earlier CSV format still caused Half-Life to show **no price** for all 17 items, so the account-side import is **not verified**; re-import from the repo and inspect the Unit column. [Recovery notes](purchasing/HALFLIFE_PRICE_IMPORT_RECOVERY.md). The same current revision is backed up in [purchasing/BOM_HalfLife_v2_1.csv](purchasing/BOM_HalfLife_v2_1.csv). [All unpriced engineering items](purchasing/BOM_Engineering_v2_1.csv) are tracked separately and are not assumed free. Importing the BOM into Half-Life and seeing the prices there is still a separate verification step.
 
 **Version warning:** This is the **v2.1 5V Raspberry Pi analog-audio board**, not the original v1 ESP32/12V design. The original v1 prices further down this README are historical and do not apply to the current BOM.
 

@@ -24,3 +24,7 @@
 | **TOTAL (priced items only)** | | | **$34.46** |
 
 Use [the root machine-readable BOM](../BOM.csv) for the current Hack Club import. Price cells contain plain numbers without currency symbols. [Engineering BOM](BOM_Engineering_v2_1.csv) tracks missing/unquoted needs. Re-import into Half-Life and check actual parsed line amounts before submitting.
+
+## Half-Life import status
+
+The owner reported **no price** in every imported row despite old `Cost/item` values. The root CSV now includes both `Unit Price` and `Price` in numeric USD plus `Total Cost`; the new schema is an evidence-based compatibility attempt, not proof of the live importer. See [recovery record](HALFLIFE_PRICE_IMPORT_RECOVERY.md).
