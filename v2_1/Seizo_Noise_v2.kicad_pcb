@@ -4759,7 +4759,7 @@
         (hatch edge 0.5)
         (connect_pads (clearance 0.3))
         (min_thickness 0.25)
-        (fill yes (thermal_gap 0.3) (thermal_bridge_width 0.45) (island_removal_mode 1))
+        (fill yes (thermal_gap 0.3) (thermal_bridge_width 0.45) (island_removal_mode 0))
         (polygon (pts (xy 0.8 0.8) (xy 84.2 0.8) (xy 84.2 59.2) (xy 0.8 59.2)))
     )
 
