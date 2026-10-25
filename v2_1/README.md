@@ -2,6 +2,10 @@
 
 This project is the **new, simpler 5V analog speaker/interface board** for Seizo. It is **not** the old ESP32/12V board.
 
+## BOM price (listed parts only)
+
+**$34.46 USD estimated subtotal, 17 lines, including a provisional $4.00 bare PCB allowance.** Shipping, tax, enclosure, mount hardware, actual 5V power-adapter requirements and missing supplies are **not yet priced**. This is not an order-ready/landed total. Open [numeric BOM](../BOM.csv) or [full price table](../purchasing/PRICED_BOM_SUMMARY.md).
+
 ## Open in KiCad
 
 1. Extract the complete ZIP into one folder (do not pull out just the PCB file).

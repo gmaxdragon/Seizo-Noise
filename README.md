@@ -3,6 +3,35 @@
 > **Engineering update, 24 October 2026:** A separate [**Seizo Noise v2.1 native KiCad source**](v2_1/ENGINEERING_REVIEW.md) and matching [BOM](purchasing/BOM_HalfLife_v2_1.csv) have been added. The narrative and screenshots below document the original **v1 ESP32/12V board**, not the simplified v2.1 5V Pi audio carrier. The root BOM now shows the **v2.1 priced subset** ($34.46 before missing shipping, tax and hardware); the complete legacy v1 BOM is [archived](purchasing/legacy_v1_BOM_archive.csv). v2.1 CAD has archived clean ERC/DRC but is not approved for PCB fabrication or order until the actual jack and potentiometer fit is checked. Neither board has been physically assembled or audio-tested. This note is a technical engineering update and does not alter the owner's account of the project.
 
 
+## Current Seizo Noise v2.1 BOM and pricing (October 24, 2026)
+
+**Estimated listed parts and PCB subtotal: $34.46 USD across 17 lines.** Includes a **provisional $4.00 PCB fabrication allowance**. This is **not** a final shipped/project cost. Shipping, sales tax, enclosure, standoffs, adapter/power-supply and other unpriced assembly items are **not included**. Prices come from saved catalog checks and are **not a live checkout quote**.
+
+| Part | Quantity | Unit price (USD) | Line total (USD) |
+| --- | ---: | ---: | ---: |
+| [J1: 2-pin 5.08mm screw terminal](https://www.digikey.com/en/products/detail/on-shore-technology-inc/OSTTC022162/614558) | 1 | $0.58 | $0.58 |
+| [F1: 0.75A hold resettable PTC fuse](https://www.digikey.com/en/products/detail/littelfuse-inc/RXEF075/5015922) | 1 | $0.56 | $0.56 |
+| [D1: Schottky 1A 40V axial diode DO41](https://www.digikey.com/en/products/detail/panjit-international-inc/1N5819-R2-00001/15806519) | 1 | $0.28 | $0.28 |
+| [C1: 470uF 25V low ESR radial 10mm 5mm leads](https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEU-FR1E471/2433553) | 1 | $1.06 | $1.06 |
+| [C2: 100nF X7R 50V radial 5.08mm - KEMET C052C104K5R5TA](https://www.digikey.com/en/products/detail/kemet/C052C104K5R5TA/12699186) | 1 | $1.29 | $1.29 |
+| [J4: 3.5mm TRS stereo right-angle PCB jack](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-3533NG/738701) | 1 | $1.69 | $1.69 |
+| [R1 R2: 4.7k 1/4W THT resistor](https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-4K7/1846) | 2 | $0.10 | $0.20 |
+| [R3: 100k 1/4W THT resistor](https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-100K/245) | 1 | $0.11 | $0.11 |
+| [RV1: 10k logarithmic 20mm D-shaft THT potentiometer](https://www.digikey.com/en/products/detail/bourns-inc/PTV09A-2020F-A103/3781098) | 1 | $1.23 | $1.23 |
+| [J3: 40-pin breakaway 2.54mm THT header](https://www.digikey.com/en/products/detail/PRPC040SAAN-RC/S1011EC-40-ND/2775214) | 1 | $1.23 | $1.23 |
+| [EXT AMP: Assembled PAM8302 mono class-D amplifier](https://www.digikey.com/en/products/detail/adafruit-industries-llc/2130/5761279) | 1 | $3.95 | $3.95 |
+| [EXT SPK: Enclosed 4ohm 3W speaker with JST-PH lead](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3351/6612456) | 1 | $3.95 | $3.95 |
+| [EXT MIC: USB microphone for Raspberry Pi](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3367/6623861) | 1 | $5.95 | $5.95 |
+| [EXT WIRE: 22AWG stranded silicone ribbon wire 10x 1m](https://www.digikey.com/en/products/filter/flat-ribbon-cables/adafruit-industries-llc/472) | 1 | $4.25 | $4.25 |
+| [EXT AUX: 3.5mm TRS stereo male-to-male 1m cable](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4066/9838303) | 1 | $2.95 | $2.95 |
+| [EXT KNOB: 6mm D-shaft potentiometer knob](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/CL170823BR/25579849) | 1 | $1.18 | $1.18 |
+| [Custom 85x60mm 2-layer PCB (ESTIMATE ONLY; verify manufacturer quote)](https://jlcpcb.com/) | 1 | $4.00 | $4.00 |
+| **TOTAL (priced items only)** | | | **$34.46** |
+
+**Import file:** [BOM.csv](BOM.csv) uses plain numeric USD prices (e.g. `0.58`, not `$0.58`) for more reliable CSV parsing. The same current revision is backed up in [purchasing/BOM_HalfLife_v2_1.csv](purchasing/BOM_HalfLife_v2_1.csv). [All unpriced engineering items](purchasing/BOM_Engineering_v2_1.csv) are tracked separately and are not assumed free. Importing the BOM into Half-Life and seeing the prices there is still a separate verification step.
+
+**Version warning:** This is the **v2.1 5V Raspberry Pi analog-audio board**, not the original v1 ESP32/12V design. The original v1 prices further down this README are historical and do not apply to the current BOM.
+
 ## What I made
 
 Seizo Noise is a PCB I designed for my robotic arm. The main reason I made it was that I wanted the arm to be able to talk and take in voice commands. I thought it would be really cool to say, “Hey, Seizo,” and have it respond with something like, “Yeah, what’s up?” I also want it to be able to play music.
@@ -72,7 +101,7 @@ These are CAD screenshots, not photographs of assembled hardware. They show the 
 
 Open `hardware/speakerpcb.kicad_pro` with its bundled libraries. The existing ERC/DRC reports apply to the published carrier CAD. No PCB copper or schematic nets were changed in this purchasing update, and those reports do not validate the new wired regulator assembly or physical operation.
 
-## Current hardware and purchase scope
+## Legacy v1 hardware and purchase scope (archived)
 
 **The $3.95 Adafruit 4711 regulator is NOT a drop-in replacement for the original Pololu footprint.** Leave the Pololu and its socket uninstalled. Use three short insulated wires: carrier U2 pad 3 to Vin, pad 4 to GND, and pad 5 to 3V on Adafruit 4711. Follow the [assembly option](docs/Low_cost_assembly.md) before assembling or powering. Never connect this regulator to 12V.
 
@@ -90,7 +119,7 @@ Open `hardware/speakerpcb.kicad_pro` with its bundled libraries. The existing ER
 | Deferred equipment | PCM5102 DAC and additional sensors, as in the previous initial-build plan |
 | Physical status | Not assembled, powered or audio-tested |
 
-## Bill of materials
+## Legacy v1 bill of materials (archived)
 
 **Estimated selected-parts subtotal: $68.38.** This includes the new speaker, required ESP32, short-wiring pack and barrel adapter. The 30-line DigiKey portion is $55.11. The ESP32 is $6.28 from Mouser and the amplifier is $6.99 from ShillehTek.
 
